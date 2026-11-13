@@ -1,0 +1,589 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,array,longtable}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Gk}{G_k}
+\newcommand{\norm}[1]{\lVert #1\rVert_1}
+\newcommand{\proofurl}{https://github.com/the-omega-institute/trureturing/blob/50f2a97bb5e704842f2c32c6095f68a0dc62c779/D5/S3/FiniteGroups/}
+\title{Bajnok--Beatty Conjectures 4.1 and 1.6\protect\\
+(arXiv:2406.04045v1, Section 4, p.~10; Section 1, p.~3):\protect\\
+classification and extremal noncyclic order}
+\author{Haobo Ma\thanks{ChronoAI Pte Ltd, Singapore.}\and
+Wenlin Zhang\thanks{National University of Singapore; ChronoAI Pte Ltd, Singapore.}}
+\date{3 November 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Bajnok--Beatty Conjecture 4.1 in arXiv:2406.04045v1, Section 4,
+p.~10, asks which groups
+$\Z/2\Z\times\Z/(2k)\Z$ have a two-element signed spanning set of radius
+$s$. We prove its four-case classification for every positive $k,s$.
+The decisive restriction occurs for $s=2t$ and $k=2t^2-r$, $0\le r<t$:
+the deficit $r$ must be even, and divisible by four when $t$ is odd.
+A square-covering lattice argument proves this restriction for arbitrary
+generating pairs. An explicit lattice construction proves sufficiency.
+The lower ranges follow from elementary integer representations.
+Counting coefficient residues also proves Conjecture 1.6 of the same
+source (Section 1, p.~3): for $s\ge3$, the maximum noncyclic order is
+$2s^2$ if $2s+1$ is prime, and $2s^2+2s-(p^2-1)/2$ otherwise,
+where $p$ is the smallest prime divisor of $2s+1$.
+\end{abstract}
+\noindent\textbf{License.} Creative Commons Attribution 4.0 International
+(CC BY 4.0).
+
+\section{Statement and attribution}
+Write $\Gk=\Z/2\Z\times\Z/(2k)\Z$, where $k\ge1$. A pair of
+distinct elements $a,b\in\Gk$ is \emph{$s$-spanning} if every $g\in\Gk$
+has a representation $g=xa+yb$ with integers $x,y$ satisfying
+$|x|+|y|\le s$. This is equivalent to the undirected Cayley graph with
+generating set $\{a,b\}$ having diameter at most $s$.
+All posing locators refer to the original version of Bajnok and Beatty
+\cite{BB}, arXiv:2406.04045v1: Conjecture 4.1 is in Section 4, p.~10,
+and Conjecture 1.6 is in Section 1, p.~3.
+
+\begin{theorem}[Conjecture 4.1]\label{thm:main}
+For positive integers $k,s$, the group $\Gk$ has an $s$-spanning pair
+if and only if one of the following conditions holds:
+\begin{align*}
+&s\text{ is odd}, &&2k\le s^2-1;\\
+&s\text{ is even}, &&2k\le s^2-s;\\
+&s\equiv0\pmod4,\quad k\text{ is even},
+&&s^2-s<2k\le s^2;\\
+&s\equiv2\pmod4,\quad k\equiv2\pmod4,
+&&s^2-s<2k\le s^2.
+\end{align*}
+\end{theorem}
+
+The bound $2k\le s^2$, the odd-radius classification, and the even-radius
+lower range are already Theorems 4.2, 4.3, and 4.4 of \cite{BB}.
+The remaining step is the even-radius interval $s^2-s<2k\le s^2$.
+We give the full argument, including the lower ranges, to make the
+classification self-contained.
+The same coefficient-lattice viewpoint gives the extremal order over
+all noncyclic finite abelian groups in Corollary~\ref{cor:global}.
+Its lower constructions are Bajnok and Beatty's Theorem 1.7;
+the residue count below supplies the matching upper bound.
+
+\section{The relation lattice and the order bound}
+Let $f:\Z^2\to\Gk$ be $f(x,y)=xa+yb$, for a spanning pair, and let
+$K=\ker f$. Then $f$ is surjective. This is the quotient-lattice description
+of abelian Cayley diameter in Dougherty and Faber \cite[Proposition 2]{DF}:
+the coefficient diamond of radius $s$, translated by $K$, covers $\Z^2$.
+Reduction modulo $2\Gk$ gives an
+isomorphism $\Z^2/2\Z^2\to\Gk/2\Gk$, since both groups have four
+elements. Consequently
+\begin{equation}\label{eq:parity}
+K\subseteq2\Z^2,\qquad K\not\subseteq4\Z^2.
+\end{equation}
+For the second assertion, choose $z\in\Z^2$ with $f(z)=(1,0)$.
+Then $2z\in K$. If $K\subseteq4\Z^2$, then $z\in2\Z^2$,
+contradicting the first coordinate of $f(z)$.
+
+Put $T(u,v)=(u+v,u-v)$ and $M=T^{-1}K$. The image of $T$ consists of
+the integer vectors whose coordinates have the same parity. It contains
+$K$, and $T$ is injective. Thus
+\begin{equation}\label{eq:index}
+T(M)=K,\qquad [\Z^2:M]=[\Z^2:K]/2=2k.
+\end{equation}
+Every $(u,v)\in M$ has $u+v$ even by \eqref{eq:parity}.
+
+\begin{lemma}\label{lem:square}
+If $f$ maps the integer diamond $|x|+|y|\le s$ onto $\Gk$, every
+coset of $M$ has a representative in $\{0,\ldots,s-1\}^2$.
+In particular, $2k\le s^2$.
+\end{lemma}
+\begin{proof}
+First let $s=2t$. Given $z\in\Z^2$, put
+$v=T(z-(t,t))+(1,0)$ and choose $w$ with $f(w)=f(v)$ and
+$\norm{w}\le2t$. Since $w-v\in K\subseteq2\Z^2$, the integers
+$w_1+w_2$ and $w_1-w_2$ are odd. Their absolute values are at most
+$2t-1$. Hence
+\[
+q=\big((w_1+w_2-1)/2,(w_1-w_2-1)/2\big)
+\in\{-t,\ldots,t-1\}^2.
+\]
+As $w=T(q)+(1,0)$, we have $z-(q+(t,t))\in M$, as required.
+
+If $s=2t+1$, instead take $v=T(z-(t,t))$. Now $w_1+w_2$ and
+$w_1-w_2$ are even, with absolute values at most $2t$.
+Take $q=((w_1+w_2)/2,(w_1-w_2)/2)\in\{-t,\ldots,t\}^2$.
+The same subtraction gives the required representative. The square has
+$s^2$ points, so \eqref{eq:index} proves the bound.
+\end{proof}
+
+\section{Rigidity of a nearly full square}
+For a finite-index lattice $L\subseteq\Z^2$, its index is the absolute
+determinant of any basis. In particular, the index divides the nonzero
+determinant of any two vectors of $L$.
+
+\begin{lemma}\label{lem:rigidity}
+Let $n\ge2$, $0\le\delta<n$, and $[\Z^2:L]=n^2-\delta$.
+Suppose every coset of $L$ meets $\{0,\ldots,n-1\}^2$.
+Then for some $0\le A,B<n$ and $\epsilon\in\{1,-1\}$,
+\[
+AB=\delta,\qquad
+L=\Z(n,-\epsilon B)+\Z(-A,\epsilon n).
+\]
+\end{lemma}
+\begin{proof}
+Write $d=n^2-\delta$. Then $d>n(n-1)$ and $2d>n^2$.
+For each $0\le y<n$, applying the covering assumption to $(n,y)$
+produces a vector $(p,q)\in L$ with
+\begin{equation}\label{eq:column}
+1\le p\le n,\qquad -(n-1)\le q\le n-1,\qquad 0\le y-q<n.
+\end{equation}
+First suppose $(p,0)\in L$ for some $1\le p\le n$.
+Covering $(0,n)$ produces $(-x,n-z)\in L$ with $0\le x,z<n$.
+Their determinant $p(n-z)$ is a positive multiple of $d$ at most $n^2$,
+so it equals $d$. If either $p<n$ or $z>0$, this determinant is at most
+$n(n-1)$, a contradiction. Thus $p=n$, $z=0$, $\delta=0$, and the
+two vectors $(n,0),(-x,n)$ give the desired basis.
+
+Otherwise no vector $(p,0)$ with $1\le p\le n$ belongs to $L$.
+Let $b$ be the least positive integer such that $(p,-b)\in L$ for
+some $1\le p\le n$, and let $c$ be the least positive integer such
+that $(r,c)\in L$ for some $1\le r\le n$. Such integers exist by
+\eqref{eq:column} with $y=0,n-1$, and $b,c<n$.
+For any $0\le y<n$, the vector in \eqref{eq:column} has either
+$q\le-b$, giving $y\le n-1-b$, or $q\ge c$, giving $y\ge c$.
+There can be no missing integer between these intervals, so $b+c\le n$.
+The determinant of $(p,-b),(r,c)$ is
+\[
+0<pc+rb\le n(b+c)\le n^2.
+\]
+It is a multiple of $d$, and therefore equals $d$.
+If $b+c<n$, or if both $p<n$ and $r<n$, it is at most $n(n-1)$,
+again impossible. Hence $b+c=n$, and either $p=n$ or $r=n$.
+If $p=n$, use $(n,-b)$ and $(r,c)-(n,-b)=(-(n-r),n)$.
+Here $A=n-r$, $B=b$, and $AB=\delta$.
+If $r=n$, use $(n,c)$ and $(p,-b)-(n,c)=(-(n-p),-n)$,
+with $A=n-p$, $B=c$, and $\epsilon=-1$.
+In each case the two vectors lie in $L$ and their absolute determinant
+is $d$, so their span equals $L$.
+\end{proof}
+
+\begin{lemma}[Necessary congruences]\label{lem:necessity}
+If $s=2t$, $k=2t^2-r$, and $0\le r<t$, any $s$-spanning pair in
+$\Gk$ satisfies $2\mid r$; if $t$ is odd, it also satisfies $4\mid r$.
+\end{lemma}
+\begin{proof}
+Apply Lemma~\ref{lem:rigidity} to $M$, using Lemma~\ref{lem:square},
+with $n=2t$ and $\delta=2r$. It gives the basis
+$(2t,-\epsilon B),(-A,\epsilon2t)$ with $AB=2r$.
+Every vector of $M$ has even coordinate sum. Thus $A=2u$ and $B=2v$
+for nonnegative integers $u,v$, and $r=2uv$ is even.
+If $t$ is odd and $4\nmid r$, both $u,v$ are odd. Applying $T$ to
+the two basis vectors gives
+\[
+2(t-\epsilon v,t+\epsilon v),\qquad
+2(-u+\epsilon t,-u-\epsilon t).
+\]
+Both belong to $4\Z^2$. Since they generate $T(M)=K$, this contradicts
+\eqref{eq:parity}.
+\end{proof}
+
+\section{A sufficient family}
+\begin{lemma}\label{lem:sufficiency}
+Let $t\ge1$ and $0\le j<t$. If $t$ is even or $j$ is even, the group
+$\Z/2\Z\times\Z/(4(t^2-j))\Z$ has a $2t$-spanning pair.
+\end{lemma}
+\begin{proof}
+Let $L$ be generated by
+\[
+V=(2(t-j),-2(t+j)),\qquad W=(2(t-1),2(t+1)).
+\]
+The absolute determinant is $8(t^2-j)$. The greatest common divisor of
+the four entries is $2$: after division by $2$ any common divisor
+divides both $t-1$ and $t+1$, hence divides $2$; an odd entry occurs
+when $t$ is even, or when $t$ is odd and $j$ is even.
+The elementary integer row and column reductions for a rank-two matrix
+therefore give
+\[
+\Z^2/L\simeq\Z/2\Z\times\Z/(4(t^2-j))\Z.
+\]
+Here we use the Smith normal form rule: its first invariant is the
+greatest common divisor of the entries and its second is the absolute
+determinant divided by the first.
+
+We show that every coset has a representative of $\ell^1$-norm at most
+$2t$. Under $T$, the two relation vectors are
+\[
+T(W)=(4t,-4)=U,\qquad T(V)=(-4j,4t)=V'.
+\]
+Assume first $t>1$. Their sum has both coordinates positive, since
+$j<t$. For a given $z\in\Z^2$, the coset of $T(z)+(2t,2t)$
+modulo $\Z U+\Z V'$ therefore has a nonnegative representative.
+Choose one, $(X,Y)$, with least coordinate sum.
+If $X\ge4t$, subtraction of $U$ preserves nonnegativity and reduces
+the sum by $4(t-1)>0$. If $Y\ge4t$, subtraction of $V'$ preserves
+nonnegativity and reduces the sum by $4(t-j)>0$.
+Consequently $0\le X,Y<4t$.
+For $t=1$ necessarily $j=0$; reduction first by $U=(4,-4)$ and then
+by $V'=(0,4)$ gives the same square by integer division.
+
+Subtracting $(2t,2t)$ yields a vector $T(w)$ with $w\in z+L$ and
+both coordinates in $[-2t,2t-1]$. The identity
+\[
+|w_1|+|w_2|=\max\{|w_1+w_2|,|w_1-w_2|\}
+\]
+gives the required norm bound. Finally, $L\subseteq2\Z^2$, so the
+images of $(1,0)$ and $(0,1)$ in $\Z^2/L$ are distinct.
+Their images under the displayed isomorphism are the desired pair.
+\end{proof}
+
+\section{The lower ranges and completion}
+For completeness we establish the positive ranges of Theorems 4.3 and
+4.4 of \cite{BB} directly.
+
+\begin{lemma}\label{lem:lower}
+If $s$ is odd and $2k\le s^2-1$, or if $s$ is even and
+$2k\le s^2-s$, the group $\Gk$ has an $s$-spanning pair.
+\end{lemma}
+\begin{proof}
+For $t\ge0$, the two vectors $(1,t),(1,t+1)$ in $\Z/2\Z\times\Z$
+represent every $(\eta,z)$ with $|z|\le2t(t+1)$ using coefficient
+norm at most $2t+1$. Here is an explicit verification.
+For $\eta=0$, write
+\[
+z=(2t+1)q+w,\quad -t\le w\le t,\quad
+q=\left\lfloor\frac{z+t}{2t+1}\right\rfloor.
+\]
+The bound on $z$ gives $-t\le q\le t$.
+Take $x=q-w$, $y=q+w$. Then $x+y$ is even,
+$tx+(t+1)y=z$, and $|x|+|y|=2\max(|q|,|w|)\le2t$.
+For $\eta=1$, write $z=(2t+1)q+u$, $0\le u\le2t$.
+Now $-t-1\le q\le t$. Set
+\[
+x=q+1-u+t,\qquad y=q+u-t.
+\]
+Then $x+y=2q+1$ is odd and $tx+(t+1)y=z$.
+Also $x-y=2t+1-2u$; thus the same norm identity gives
+$|x|+|y|\le2t+1$.
+For odd $s=2t+1$, choose an integer representative $z$ of the second
+coordinate with $|z|\le k\le2t(t+1)$, and reduce this construction
+modulo $2k$. The pair is distinct since its second coordinates differ
+by $1$ modulo $2k$.
+
+For even $s=2t$, use $(1,t-1),(1,t)$. The preceding construction
+with parameter $t-1$ covers both first coordinates for
+$|z|\le B=2t(t-1)$ with coefficient norm at most $2t-1$.
+The three integer intervals $ct+[-B,B]$, $c=-1,0,1$, cover
+$[-B-t,B+t]$: their endpoints are adjacent or overlap because
+$t\le2B+1$. This last inequality holds at $t=1$, and for $t>1$ it
+follows from $(t-1)(4t-1)\ge0$.
+Choose $c$ with $|z-ct|\le B$, represent $(\eta-c,z-ct)$ in the
+smaller range, and add $c(1,t)$. The coefficient norm is at most
+$2t$. As $k\le B+t=2t^2-t$, reduction modulo $2k$ gives the claim,
+again with distinct elements.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Lemma~\ref{lem:square} gives $2k\le s^2$ for every spanning pair.
+For odd $s$, the even integer $2k$ is at most $s^2-1$, and
+Lemma~\ref{lem:lower} gives the converse.
+For even $s=2t$, Lemma~\ref{lem:lower} treats $2k\le s^2-s$.
+In the remaining interval put $r=2t^2-k$; then $0\le r<t$.
+Lemma~\ref{lem:necessity} says that $r$ is even, and that
+$4\mid r$ when $t$ is odd. If $t$ is even this is exactly the
+condition that $k$ is even. If $t$ is odd it is exactly
+$k\equiv2\pmod4$.
+Conversely these congruences give $r=2j$ with $0\le2j<t$ and
+$t$ even or $j$ even. Then $k=2(t^2-j)$, and
+Lemma~\ref{lem:sufficiency} supplies a $2t$-spanning pair.
+\end{proof}
+
+\begin{corollary}\label{cor:maximum}
+Among groups $\Gk$ with an $s$-spanning pair, the largest order is
+$2s^2$ for even $s\ge2$, and $2s^2-2$ for odd $s\ge3$.
+There is no such group for $s=1$.
+\end{corollary}
+\begin{proof}
+The order is $4k$. For odd $s\ge3$, take $2k=s^2-1$.
+For even $s$, take $k=s^2/2$: it is even if $s\equiv0\pmod4$,
+and it is $2$ modulo $4$ if $s\equiv2\pmod4$.
+The upper bounds and the assertion for $s=1$ follow from
+Theorem~\ref{thm:main}.
+\end{proof}
+
+\begin{corollary}[Even first invariant factor]\label{cor:even-factor}
+Let $c\ge2$ be even and $k,s\ge1$. If
+$G=\Z/c\Z\times\Z/(ck)\Z$ has an $s$-spanning pair, then
+$|G|\le2s^2$. Equality requires $c\mid s$.
+In particular, if $s$ is odd then $|G|\le2s^2-2$.
+\end{corollary}
+\begin{proof}
+Let $f:\Z^2\to G$ be the surjection induced by the pair, and put
+$K=\ker f$. The induced surjection $(\Z/c\Z)^2\to G/cG$ is bijective,
+since both groups have order $c^2$. Thus $K\subseteq c\Z^2\subseteq2\Z^2$.
+For $M=T^{-1}K$ we have $T(M)=K$ and $[\Z^2:M]=|G|/2$.
+The proof of Lemma~\ref{lem:square}, which uses only $K\subseteq2\Z^2$,
+therefore gives $|G|/2\le s^2$.
+If equality holds, $s\ge2$ and Lemma~\ref{lem:rigidity} applies with
+$n=s$, $\delta=0$. Its basis has $AB=0$. If $B=0$, applying $T$ to
+the first basis vector gives $(s,s)\in K$. If $A=0$, applying $T$ to
+the second gives $(\epsilon s,-\epsilon s)\in K$.
+In either case $K\subseteq c\Z^2$ implies $c\mid s$.
+For odd $s$ equality is impossible; since $4\mid|G|$,
+the inequality sharpens to $|G|\le2s^2-2$.
+\end{proof}
+
+This extends the even-$c$ part of Theorems 1.8 and 3.2(1) of \cite{BB}:
+the source assumes an $s$-spanning pair of the special form
+$\{(1,u),(1,v)\}$, whereas Corollary~\ref{cor:even-factor} permits any pair.
+
+\section{Residue counts and Conjecture 1.6}
+\begin{lemma}[Odd first invariant factor]\label{lem:odd-factor}
+Let $c\ge3$ be odd, and write $s=ct+r$ with $0\le r<c$.
+If $G=\Z/c\Z\times\Z/(ck)\Z$ has an $s$-spanning pair, then
+\[
+k\le F_c(s):=
+\begin{cases}
+2t^2,&0\le r<(c-1)/2,\\
+2t(t+1),&(c-1)/2\le r<c-1,\\
+2t(t+1)+1,&r=c-1.
+\end{cases}
+\]
+No regularity hypothesis on the pair is required.
+\end{lemma}
+\begin{proof}
+For the surjection $f:\Z^2\to G$ induced by the pair, put $K=\ker f$.
+As in Corollary~\ref{cor:even-factor}, $K\subseteq c\Z^2$.
+Consequently all representatives of any one element of $G$ have the
+same coefficient residue modulo $c$. Each of the $c^2$ coefficient
+residues corresponds to one coset of $cG$, with $k$ elements.
+Each residue class in the diamond $|x|+|y|\le s$ must therefore
+contain at least $k$ points.
+
+Put $U=x+y$ and $V=x-y$. Since $c$ is odd, this is an invertible
+change of coordinates modulo $c$. Over the integers it identifies
+the diamond with $|U|,|V|\le s$, $U\equiv V\pmod2$.
+For a residue $i$ modulo $c$, let $E_i,O_i$ count its even and odd
+representatives in $[-s,s]$. A prescribed pair of residues for $U,V$
+therefore contains $E_iE_j+O_iO_j$ diamond points.
+
+Choose $i=s+1\pmod c$. Its representatives are $s+1-\ell c$,
+$1\le\ell\le\lfloor(2s+1)/c\rfloor$, with alternating parity.
+If $r<(c-1)/2$, there are $2t$ representatives, so $E_i=O_i=t$.
+Taking $j=i$ gives $2t^2$ points.
+If $(c-1)/2\le r<c-1$, both $i=s+1$ and $j=s+2$ have $2t+1$
+representatives: for the latter the number is
+$\lfloor(2s+2)/c\rfloor=2t+1$.
+Their first representatives have opposite parity. Thus their counts
+are $(t,t+1)$ and $(t+1,t)$, giving $2t(t+1)$ points.
+If $r=c-1$, take $j=i$ again. There are $2t+1$ representatives, giving
+$t^2+(t+1)^2=2t(t+1)+1$ points. In each case $k$ is at most this count.
+\end{proof}
+
+\begin{corollary}[Conjecture 1.6]\label{cor:global}
+For $s\ge3$, the largest order $N(s)$ of a noncyclic finite abelian
+group with an $s$-spanning pair is
+\[
+N(s)=\begin{cases}
+2s^2,&2s+1\text{ is prime},\\
+2s^2+2s-(p^2-1)/2,&2s+1\text{ is composite},
+\end{cases}
+\]
+where $p$ is the smallest prime divisor of $2s+1$ in the second case.
+\end{corollary}
+\begin{proof}
+Such a group has the form $G=\Z/c\Z\times\Z/(ck)\Z$ with $c\ge2$.
+Even $c$ gives $|G|\le2s^2$ by Corollary~\ref{cor:even-factor}.
+For odd $c$, apply Lemma~\ref{lem:odd-factor}.
+In its first case, $c^2F_c(s)=2c^2t^2\le2s^2$.
+In its middle case,
+\[
+c^2F_c(s)-2s^2=2ct(c-2r)-2r^2.
+\]
+This is negative for $r>(c-1)/2$. At $r=(c-1)/2$ it gives exactly
+\[
+|G|\le2s^2+2s-(c^2-1)/2,\qquad c\mid 2s+1.
+\]
+In the last case the difference is
+\[
+c^2F_c(s)-2s^2=-2ct(c-2)-c^2+4c-2<0.
+\]
+For $c\ge5$ the constant term is already negative; for $c=3$, $s\ge3$
+and $r=2$ imply $t\ge1$, giving $1-6t<0$.
+
+If $2s+1$ is prime, its only possible divisor $c\ge3$ in the exceptional
+middle case is $c=2s+1$. Then $t=0$ and $F_c(s)=0$, incompatible with
+$k\ge1$. Hence $|G|\le2s^2$.
+If $2s+1$ is composite, every exceptional $c$ satisfies $c\ge p$;
+its bound is at most $2s^2+2s-(p^2-1)/2$.
+This exceeds $2s^2$: writing $2s+1=pq$ with $q\ge p$ gives excess
+$pq-1-(p^2-1)/2\ge(p^2-1)/2>0$.
+
+The matching constructions are those of \cite[Theorem 1.7,
+Proposition 2.3 and Corollary 2.5]{BB}:
+$\Z/s\Z\times\Z/(2s)\Z$ attains $2s^2$.
+In the composite case, put $q=(2s+1)/p$ and $t=(q-1)/2\ge1$.
+The pair $\{(1,t),(1,t+1)\}$ in
+$\Z/p\Z\times\Z/(2pt(t+1))\Z$ is $s$-spanning by
+\cite[Theorem 2.4]{BB}, with order $2s^2+2s-(p^2-1)/2$.
+All these groups are noncyclic and the indicated pairs are distinct.
+\end{proof}
+
+\begin{corollary}[Theorem 3.3 without regularity]\label{cor:universal}
+For $s\ge3$, every noncyclic finite abelian group with an $s$-spanning
+pair has order at most $2s^2+2s-4$.
+Equality holds precisely for the isomorphism type
+$\Z/3\Z\times\Z/((2s^2+2s-4)/3)\Z$, with $s\equiv1\pmod3$.
+\end{corollary}
+\begin{proof}
+The nonexceptional bounds above are at most $2s^2<2s^2+2s-4$.
+In the exceptional bound equality requires $c=3$, hence
+$s\equiv1\pmod3$; the construction in Corollary~\ref{cor:global}
+attains it. This also extends Theorem 1.8 to arbitrary pairs:
+the odd-$c$ residue bounds imply all its stated upper bounds, while
+Corollary~\ref{cor:even-factor} treats even $c$.
+\end{proof}
+
+\paragraph{Small radii.}
+There is no noncyclic group with a $1$-spanning pair:
+even $c$ would give $c^2\le|G|\le2$, and odd $c\ge3$ gives
+$k\le F_c(1)=0$. At radius $2$, the even-$c$ bound gives order at
+most $8$, while the odd-$c$ bound permits only $c=3$, $k=1$;
+$\{(1,0),(0,1)\}$ spans $\Z_3^2$ with radius $2$.
+Thus $N(2)=9$. In particular the first bound in
+\cite[Theorem 1.7]{BB} requires $s\ge2$, and its Theorem 1.9
+requires the radius-one exception stated in Corollary~\ref{cor:maximum}.
+
+\paragraph{Perfect spanning sets (Conjecture 1.10, Section 1, p.~4).}
+For $m=1$, perfection forces a cyclic group of order $2s+1$ with its
+chosen generator. For $s=1$, perfection is exactly the disjoint union
+$G=\{0\}\sqcup A\sqcup(-A)$. These are the boundary cases already
+stated in \cite{BB}. For $m=2$, a perfect set has
+$|G|=2s^2+2s+1$, hence $G$ is cyclic by Corollary~\ref{cor:universal}
+when $s\ge3$. When $s=2$, Lemma~\ref{lem:odd-factor} and the even-$c$
+bound give maximum noncyclic order $9$, attained by $\Z_3^2$;
+when $s=1$, the order is the prime $5$. Thus cyclicity holds for all $s$.
+
+The printed multiplier domain in Conjecture 1.10 needs correction:
+$d\in\Z_{2s+1}$ should be $d\in(\Z_{2s^2+2s+1})^\times$.
+Indeed, for $s=2$, $A=\{2,10\}\subset\Z/13\Z$ is perfect:
+$0,\pm2,\pm10,\pm4,\pm20,\pm12,\pm8$ give all thirteen residues.
+It equals $5\{2,3\}$, but equals none of $d\{2,3\}$ for
+$0\le d\le4$. This corrects the domain; the full two-generator
+shape assertion with that corrected domain is not proved here.
+
+\section{Coverage and verification}
+The following table separates the exact posing statement from other items
+in the same source. The term ``not covered'' refers to the scope of this note.
+\begin{center}\small
+\begin{tabular}{p{.26\linewidth}p{.65\linewidth}}
+\hline
+Source item in \cite{BB}&Coverage\\ \hline
+Conjecture 4.1 (p.~10)&Proved: Theorem~\ref{thm:main}, all four clauses and every positive $k,s$.\\
+Theorems 4.2--4.4&Prior proofs cited; Lemmas~\ref{lem:square} and \ref{lem:lower}
+give complete proofs of the order bound and lower ranges.\\
+Theorems 1.7, 1.9&Prior proofs cited for $s\ge2$;
+refuted-and-corrected radius-one maximum/lower-bound assertions:
+no noncyclic group has a $1$-spanning pair.\\
+Theorems 1.8, 3.2&Proved without regularity: Corollary~\ref{cor:even-factor}
+and Lemma~\ref{lem:odd-factor} imply their order bounds for arbitrary pairs.\\
+Conjecture 1.6 (p.~3)&Proved: Corollary~\ref{cor:global}, every $s\ge3$;
+the lower constructions are prior proofs cited from Theorem 1.7.\\
+Theorem 3.3&Proved without regularity: Corollary~\ref{cor:universal},
+including its equality isomorphism type.\\
+Conjecture 1.10 (p.~4)&Refuted-and-corrected multiplier domain;
+proved cyclicity for $m=2$ and the elementary $m=1$ and $s=1$ cases.
+Corrected $m=2$ shape not covered. For $m\ge3,s\ge2$, prior theorem
+statement cited from \cite[Theorem 1.1]{CHL}.\\
+Sections 1--3, other items&Prior proofs cited: Proposition 1.1,
+Theorems 1.2--1.5, Lemma 2.1, Propositions 2.2--2.3,
+Theorem 2.4, Corollary 2.5 and Theorem 3.1.
+Directed questions for $m\ge3$ and exact orders with $m\ge3$
+generators are not covered.\\
+\cite{BBJ}, Questions 6, 7, 10--12&Not covered: restricted unsigned bases
+have a different coefficient set from the signed two-generator diamonds.\\ \hline
+\end{tabular}
+\end{center}
+
+For the Conjecture 1.10 comparison, a perfect $s$-spanning set with $m$
+elements makes the coefficient map $\Z^m\to G$ bijective on the integer
+Lee ball $B_m(s)=\{x:\sum_i|x_i|\le s\}$. Its kernel therefore gives a
+lattice tiling by that ball. The exclusion for $m\ge3$, $s\ge2$ is the
+statement of Chen, Huang, and Luo \cite[Theorem 1.1]{CHL}, rather than
+a consequence of our two-dimensional argument. Their lattice-tiling
+preprint was posted on 25 October 2026; their subsequent same-day
+preprint \cite[Theorem 1.1]{CHLA} states the stronger exclusion for
+arbitrary centre sets. These statements concern existence parameters,
+not the individual two-dimensional perfect sets.
+
+The pinned Lean declarations have the following scopes:
+\begin{itemize}
+\item \href{\proofurl BajnokBeattyAllRegimes.lean}{\texttt{BajnokBeattyAllRegimes.result}}:
+Theorem~\ref{thm:main}, with positive natural $k,s$, distinct $a,b$,
+and the signed coefficient bound.
+\item \href{\proofurl BajnokBeattyCayleyNecessity.lean}{\texttt{BajnokBeattyCayleyNecessity.}\allowbreak\texttt{top\_strip\_necessity}}:\newline
+Lemma~\ref{lem:necessity} for arbitrary pairs, without requiring distinctness.
+\item \href{\proofurl BajnokBeattyCayleySufficiency.lean}{\texttt{BajnokBeattyCayleySufficiency.}\allowbreak\texttt{result}}:
+Lemma~\ref{lem:sufficiency}, including $t=1,j=0$.
+\item \href{\proofurl NearSquareLatticeRigidity.lean}{\texttt{NearSquareLatticeRigidity.}\allowbreak\texttt{near\_square\_rigidity}}:
+the lattice statement of Lemma~\ref{lem:rigidity}.
+\end{itemize}
+All four links select commit
+\texttt{50f2a97bb5e704842f2c32c6095f68a0dc62c779}.
+The arguments above are written proofs of the stated lemmas and corollaries.
+Corollary~\ref{cor:even-factor} is a written consequence of the square and
+rigidity lemmas. Lemma~\ref{lem:odd-factor},
+Corollaries~\ref{cor:global}--\ref{cor:universal}, and the assertions about
+Conjecture 1.10 have written proofs or the displayed literature attribution;
+the four listed declarations do not separately state these results.
+
+The accompanying \texttt{verify.py} independently computes minimum diameters
+over all distinct two-element subsets of $\Gk$ for $1\le k\le40$,
+and compares the classification for $1\le s\le12$.
+It also checks the displayed sufficient family through $t=12$ and the
+integer formulas for the lower ranges through $t=12$.
+It also exhausts all distinct pairs for $c\in\{4,6\}$, $1\le k\le4$
+in the even-first-invariant-factor corollary.
+It compares the odd-$c$ residue bounds with explicit diamond counts,
+checks the extremal formula over bounded radii, and verifies the displayed
+perfect-set counterexample and the attaining pairs.
+An exhaustive comparison of all noncyclic two-generator abelian groups
+of order at most $61$ gives the global maxima for $2\le s\le5$.
+These finite checks supplement, rather than replace, the proofs for
+unbounded parameters.
+
+\begin{thebibliography}{5}
+\bibitem{BB}
+B. Bajnok and W. K. Beatty,
+\emph{On the Diameter of Undirected Cayley Graphs of Finite Abelian Groups},
+arXiv:2406.04045v1, 6 June 2024,
+\href{https://arxiv.org/abs/2406.04045v1}{arXiv:2406.04045v1}.
+Published as \emph{Combinatorics and Number Theory} \textbf{14} (2025),
+no.~1, 1--12,
+\href{https://doi.org/10.2140/cnt.2025.14.1}{doi:10.2140/cnt.2025.14.1}.
+\bibitem{DF}
+R. Dougherty and V. Faber,
+\emph{The degree-diameter problem for several varieties of Cayley graphs,
+I: The Abelian case},
+\emph{SIAM Journal on Discrete Mathematics} \textbf{17} (2004), no.~3,
+478--519,
+\href{https://doi.org/10.1137/S0895480100372899}{doi:10.1137/S0895480100372899}.
+The cited Proposition 2 is in
+\href{https://arxiv.org/abs/math/9412223v2}{arXiv:math/9412223v2},
+8 September 2000, p.~6.
+\bibitem{CHL}
+B. Chen, J. Huang, and G. Luo,
+\emph{The Golomb--Welch conjecture for lattice tilings},
+\href{https://arxiv.org/abs/2610.33983v1}{arXiv:2610.33983v1},
+25 October 2026, Theorem~1.1.
+\bibitem{CHLA}
+B. Chen, J. Huang, and G. Luo,
+\emph{The Golomb--Welch conjecture for arbitrary centre sets},
+\href{https://arxiv.org/abs/2610.34291v1}{arXiv:2610.34291v1},
+25 October 2026, Theorem~1.1.
+\bibitem{BBJ}
+B. Bajnok, C. Berson, and H. A. Just,
+\emph{On Perfect Bases in Finite Abelian Groups},
+\href{https://arxiv.org/abs/2211.13675v1}{arXiv:2211.13675v1},
+24 November 2022, Section~4.
+\end{thebibliography}
+\end{document}

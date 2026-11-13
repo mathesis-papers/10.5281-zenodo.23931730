@@ -1,0 +1,23 @@
+{
+  "id": "bajnok-beatty-original-conjecture-4-1",
+  "revision": 2,
+  "problem_ids": [
+    "bajnok-beatty-original-conjecture-4-1"
+  ],
+  "topic": "Bajnok–Beatty Conjectures 4.1 and 1.6 in arXiv:2406.04045v1, Section 4, p. 10; Section 1, p. 3",
+  "title": "Bajnok–Beatty Conjectures 4.1 and 1.6 (arXiv:2406.04045v1, Section 4, p. 10; Section 1, p. 3): classification and extremal noncyclic order",
+  "creators": [
+    {
+      "name": "Haobo Ma",
+      "affiliation": "ChronoAI Pte Ltd, Singapore"
+    },
+    {
+      "name": "Wenlin Zhang",
+      "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore"
+    }
+  ],
+  "abstract": "Bajnok–Beatty Conjecture 4.1 in arXiv:2406.04045v1, Section 4, p. 10, asks which groups Z/2Z × Z/(2k)Z have a two-element signed spanning set of radius s. The note proves its four-case classification for all positive k,s. A near-square relation-lattice argument gives the necessary congruences, and explicit constructions give sufficiency. Coefficient-residue counts also prove Conjecture 1.6 (Section 1, p. 3): for s≥3, the maximum noncyclic order is 2s² if 2s+1 is prime, and 2s²+2s−(p²−1)/2 otherwise, where p is the smallest prime divisor of 2s+1. The attaining constructions are those of Bajnok and Beatty. The bounds in Theorems 1.8, 3.2 and 3.3 hold without regularity. For Conjecture 1.10 the note proves cyclicity for two generators and corrects the printed multiplier domain by an explicit perfect set in Z/13Z.",
+  "summary": "Complete two-generator classification and exact maximum order over all noncyclic finite abelian groups; arbitrary-pair invariant-factor bounds, a perfect-set domain correction, and precise written, Lean-declaration, and finite-check coverage.",
+  "license": "cc-by-4.0",
+  "evidence_url": "https://github.com/the-omega-institute/trureturing/blob/50f2a97bb5e704842f2c32c6095f68a0dc62c779/D5/S3/FiniteGroups/BajnokBeattyAllRegimes.lean"
+}

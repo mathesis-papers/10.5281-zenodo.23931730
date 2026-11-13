@@ -1,0 +1,62 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 107744,
+      "matches_public": null,
+      "path": "paper.pdf",
+      "public_sha256": null,
+      "sha256": "a0fbaedc2c607e5862f3580fac346a6e5f16e7474e92a1cfe1d19225d09cefc8"
+    },
+    "source": {
+      "bytes": 19914,
+      "matches_public": null,
+      "path": "manuscript/",
+      "public_sha256": null,
+      "sha256": "64ea5cfdeed1218940783c144c01fd4515f45497ea15a837fc19d41d4bd4c043"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "Bajnok–Beatty Conjecture 4.1 in arXiv:2406.04045v1, Section 4, p. 10, asks which groups Z/2Z × Z/(2k)Z have a two-element signed spanning set of radius s. The note proves its four-case classification for all positive k,s. A near-square relation-lattice argument gives the necessary congruences, and explicit constructions give sufficiency. Coefficient-residue counts also prove Conjecture 1.6 (Section 1, p. 3): for s≥3, the maximum noncyclic order is 2s² if 2s+1 is prime, and 2s²+2s−(p²−1)/2 otherwise, where p is the smallest prime divisor of 2s+1. The attaining constructions are those of Bajnok and Beatty. The bounds in Theorems 1.8, 3.2 and 3.3 hold without regularity. For Conjecture 1.10 the note proves cyclicity for two generators and corrects the printed multiplier domain by an explicit perfect set in Z/13Z.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": "10.5281/zenodo.23931730",
+    "current_version": 2,
+    "doi": "10.5281/zenodo.23931731",
+    "lean_source": {
+      "revision": "50f2a97bb5e704842f2c32c6095f68a0dc62c779",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/50f2a97bb5e704842f2c32c6095f68a0dc62c779/D5/S3/FiniteGroups/BajnokBeattyAllRegimes.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "url": "/api/v1/collected-papers/bajnok-beatty-original-conjecture-4-1/files/pdf?version=2"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-05T08:03:38.474016061Z",
+    "record": "bajnok-beatty-original-conjecture-4-1",
+    "repository_name": "6aec385ac094feef28f99ea6",
+    "source": {
+      "url": "/api/v1/collected-papers/bajnok-beatty-original-conjecture-4-1/files/source?version=2"
+    },
+    "title": "Bajnok–Beatty Conjectures 4.1 and 1.6 (arXiv:2406.04045v1, Section 4, p. 10; Section 1, p. 3): classification and extremal noncyclic order",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-05T08:03:38.474016061Z",
+        "revision": "2",
+        "version": 2
+      }
+    ],
+    "work": "bajnok-beatty-original-conjecture-4-1"
+  }
+}

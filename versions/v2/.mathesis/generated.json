@@ -1,0 +1,36 @@
+{
+  "generated_paths": [
+    "CHANGELOG.md",
+    "CITATION.cff",
+    "CONTRIBUTING.md",
+    "LICENSES/CC-BY-4.0.txt",
+    "README.md",
+    "formalization/nodes.json",
+    "manuscript/bajnok-beatty-conjectures/README.md",
+    "manuscript/bajnok-beatty-conjectures/SHA256SUMS",
+    "manuscript/bajnok-beatty-conjectures/checks.json",
+    "manuscript/bajnok-beatty-conjectures/metadata.json",
+    "manuscript/bajnok-beatty-conjectures/note.tex",
+    "manuscript/bajnok-beatty-conjectures/verify.py",
+    "paper.json",
+    "paper.pdf"
+  ],
+  "generator_version": "0.1.0",
+  "sha256": {
+    "CHANGELOG.md": "a24c33be5c0b6029489a2c8419bb55d317fd1d1c0fb6165e206910b266ee18ee",
+    "CITATION.cff": "a0e10d98866a8c02cef7ed9f601a56915c9af0849d100778e2d81eacef6dcd77",
+    "CONTRIBUTING.md": "fafd66e63160b2a88f433af56d2af2b0f7bf6ed2fd417d46b54446ce07c627ff",
+    "LICENSES/CC-BY-4.0.txt": "58230517b7895aa219ff46a6ed63e67057a1582fb9ea054b16728a8c13525650",
+    "README.md": "5338e32a35e54dc8a044aa5630cf518018b1a8d879fcaec0df820df0d61cb426",
+    "formalization/nodes.json": "217e1e67d7c683ab59b0bd3fa12f46f0c26676efe1c804e25c598272627824ed",
+    "manuscript/bajnok-beatty-conjectures/README.md": "09eb0f86499ff10d10b0dc8aef40ad5f5fdcbe59e6c57412f347b6c1340d7cf2",
+    "manuscript/bajnok-beatty-conjectures/SHA256SUMS": "2b8e0710a694fbe6fa62967d04300b1e16ce8fd016ea09216111dab98abe755c",
+    "manuscript/bajnok-beatty-conjectures/checks.json": "41834f5ef8b64cd43b0fa030d5d7c9b23403f398b0e409eb29679f388482bbbc",
+    "manuscript/bajnok-beatty-conjectures/metadata.json": "5b55a2055f1ec7660039085815f558d9ba5f3fbc9990b4181c0cc0a2e264d5f6",
+    "manuscript/bajnok-beatty-conjectures/note.tex": "dac20c89a7e03c529705cd8de462e3bcef7037d8aa29157e1e5f28543b2c8371",
+    "manuscript/bajnok-beatty-conjectures/verify.py": "a1ff5757fbb19a2bbce705cd02aedc4b0148e560fb30ea7ea8a5e72da5dc9fde",
+    "paper.json": "51dc8ac6470ed4cb48a134428464c93994acdc30387915d380d9a5862ca5cfc3",
+    "paper.pdf": "a0fbaedc2c607e5862f3580fac346a6e5f16e7474e92a1cfe1d19225d09cefc8"
+  },
+  "snapshot_identity": "cf7dddc7adeedae37e3b7aa89874f0211d88d227e9e87e76ca70c780fd1b9b3d"
+}

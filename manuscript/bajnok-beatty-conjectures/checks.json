@@ -1,0 +1,1364 @@
+{
+  "classification": {
+    "comparisons": 480,
+    "distinct_pairs": 175480,
+    "k_range": [
+      1,
+      40
+    ],
+    "minimum_diameters": [
+      {
+        "k": 1,
+        "minimum_diameter": 2
+      },
+      {
+        "k": 2,
+        "minimum_diameter": 2
+      },
+      {
+        "k": 3,
+        "minimum_diameter": 3
+      },
+      {
+        "k": 4,
+        "minimum_diameter": 3
+      },
+      {
+        "k": 5,
+        "minimum_diameter": 4
+      },
+      {
+        "k": 6,
+        "minimum_diameter": 4
+      },
+      {
+        "k": 7,
+        "minimum_diameter": 5
+      },
+      {
+        "k": 8,
+        "minimum_diameter": 4
+      },
+      {
+        "k": 9,
+        "minimum_diameter": 5
+      },
+      {
+        "k": 10,
+        "minimum_diameter": 5
+      },
+      {
+        "k": 11,
+        "minimum_diameter": 5
+      },
+      {
+        "k": 12,
+        "minimum_diameter": 5
+      },
+      {
+        "k": 13,
+        "minimum_diameter": 6
+      },
+      {
+        "k": 14,
+        "minimum_diameter": 6
+      },
+      {
+        "k": 15,
+        "minimum_diameter": 6
+      },
+      {
+        "k": 16,
+        "minimum_diameter": 7
+      },
+      {
+        "k": 17,
+        "minimum_diameter": 7
+      },
+      {
+        "k": 18,
+        "minimum_diameter": 6
+      },
+      {
+        "k": 19,
+        "minimum_diameter": 7
+      },
+      {
+        "k": 20,
+        "minimum_diameter": 7
+      },
+      {
+        "k": 21,
+        "minimum_diameter": 7
+      },
+      {
+        "k": 22,
+        "minimum_diameter": 7
+      },
+      {
+        "k": 23,
+        "minimum_diameter": 7
+      },
+      {
+        "k": 24,
+        "minimum_diameter": 7
+      },
+      {
+        "k": 25,
+        "minimum_diameter": 8
+      },
+      {
+        "k": 26,
+        "minimum_diameter": 8
+      },
+      {
+        "k": 27,
+        "minimum_diameter": 8
+      },
+      {
+        "k": 28,
+        "minimum_diameter": 8
+      },
+      {
+        "k": 29,
+        "minimum_diameter": 9
+      },
+      {
+        "k": 30,
+        "minimum_diameter": 8
+      },
+      {
+        "k": 31,
+        "minimum_diameter": 9
+      },
+      {
+        "k": 32,
+        "minimum_diameter": 8
+      },
+      {
+        "k": 33,
+        "minimum_diameter": 9
+      },
+      {
+        "k": 34,
+        "minimum_diameter": 9
+      },
+      {
+        "k": 35,
+        "minimum_diameter": 9
+      },
+      {
+        "k": 36,
+        "minimum_diameter": 9
+      },
+      {
+        "k": 37,
+        "minimum_diameter": 9
+      },
+      {
+        "k": 38,
+        "minimum_diameter": 9
+      },
+      {
+        "k": 39,
+        "minimum_diameter": 9
+      },
+      {
+        "k": 40,
+        "minimum_diameter": 9
+      }
+    ],
+    "radius_range": [
+      1,
+      12
+    ]
+  },
+  "even_invariant_factors": {
+    "c_values": [
+      4,
+      6
+    ],
+    "distinct_pairs": 23020,
+    "groups": [
+      {
+        "c": 4,
+        "k": 1,
+        "minimum_diameter": 4,
+        "order": 16
+      },
+      {
+        "c": 4,
+        "k": 2,
+        "minimum_diameter": 4,
+        "order": 32
+      },
+      {
+        "c": 4,
+        "k": 3,
+        "minimum_diameter": 6,
+        "order": 48
+      },
+      {
+        "c": 4,
+        "k": 4,
+        "minimum_diameter": 6,
+        "order": 64
+      },
+      {
+        "c": 6,
+        "k": 1,
+        "minimum_diameter": 6,
+        "order": 36
+      },
+      {
+        "c": 6,
+        "k": 2,
+        "minimum_diameter": 6,
+        "order": 72
+      },
+      {
+        "c": 6,
+        "k": 3,
+        "minimum_diameter": 9,
+        "order": 108
+      },
+      {
+        "c": 6,
+        "k": 4,
+        "minimum_diameter": 9,
+        "order": 144
+      }
+    ],
+    "k_range": [
+      1,
+      4
+    ]
+  },
+  "global_extremal_order": {
+    "examples": [
+      {
+        "attaining_invariant_factors": [
+          3,
+          3
+        ],
+        "diameter": 2,
+        "maximum_order": 9,
+        "s": 2
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          6
+        ],
+        "diameter": 3,
+        "maximum_order": 18,
+        "s": 3
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          12
+        ],
+        "diameter": 4,
+        "maximum_order": 36,
+        "s": 4
+      },
+      {
+        "attaining_invariant_factors": [
+          5,
+          10
+        ],
+        "diameter": 5,
+        "maximum_order": 50,
+        "s": 5
+      },
+      {
+        "attaining_invariant_factors": [
+          6,
+          12
+        ],
+        "diameter": 6,
+        "maximum_order": 72,
+        "s": 6
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          36
+        ],
+        "diameter": 7,
+        "maximum_order": 108,
+        "s": 7
+      },
+      {
+        "attaining_invariant_factors": [
+          8,
+          16
+        ],
+        "diameter": 8,
+        "maximum_order": 128,
+        "s": 8
+      },
+      {
+        "attaining_invariant_factors": [
+          9,
+          18
+        ],
+        "diameter": 9,
+        "maximum_order": 162,
+        "s": 9
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          72
+        ],
+        "diameter": 10,
+        "maximum_order": 216,
+        "s": 10
+      },
+      {
+        "attaining_invariant_factors": [
+          11,
+          22
+        ],
+        "diameter": 11,
+        "maximum_order": 242,
+        "s": 11
+      },
+      {
+        "attaining_invariant_factors": [
+          5,
+          60
+        ],
+        "diameter": 12,
+        "maximum_order": 300,
+        "s": 12
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          120
+        ],
+        "diameter": 13,
+        "maximum_order": 360,
+        "s": 13
+      },
+      {
+        "attaining_invariant_factors": [
+          14,
+          28
+        ],
+        "diameter": 14,
+        "maximum_order": 392,
+        "s": 14
+      },
+      {
+        "attaining_invariant_factors": [
+          15,
+          30
+        ],
+        "diameter": 15,
+        "maximum_order": 450,
+        "s": 15
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          180
+        ],
+        "diameter": 16,
+        "maximum_order": 540,
+        "s": 16
+      },
+      {
+        "attaining_invariant_factors": [
+          5,
+          120
+        ],
+        "diameter": 17,
+        "maximum_order": 600,
+        "s": 17
+      },
+      {
+        "attaining_invariant_factors": [
+          18,
+          36
+        ],
+        "diameter": 18,
+        "maximum_order": 648,
+        "s": 18
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          252
+        ],
+        "diameter": 19,
+        "maximum_order": 756,
+        "s": 19
+      },
+      {
+        "attaining_invariant_factors": [
+          20,
+          40
+        ],
+        "diameter": 20,
+        "maximum_order": 800,
+        "s": 20
+      },
+      {
+        "attaining_invariant_factors": [
+          21,
+          42
+        ],
+        "diameter": 21,
+        "maximum_order": 882,
+        "s": 21
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          336
+        ],
+        "diameter": 22,
+        "maximum_order": 1008,
+        "s": 22
+      },
+      {
+        "attaining_invariant_factors": [
+          23,
+          46
+        ],
+        "diameter": 23,
+        "maximum_order": 1058,
+        "s": 23
+      },
+      {
+        "attaining_invariant_factors": [
+          7,
+          168
+        ],
+        "diameter": 24,
+        "maximum_order": 1176,
+        "s": 24
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          432
+        ],
+        "diameter": 25,
+        "maximum_order": 1296,
+        "s": 25
+      },
+      {
+        "attaining_invariant_factors": [
+          26,
+          52
+        ],
+        "diameter": 26,
+        "maximum_order": 1352,
+        "s": 26
+      },
+      {
+        "attaining_invariant_factors": [
+          5,
+          300
+        ],
+        "diameter": 27,
+        "maximum_order": 1500,
+        "s": 27
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          540
+        ],
+        "diameter": 28,
+        "maximum_order": 1620,
+        "s": 28
+      },
+      {
+        "attaining_invariant_factors": [
+          29,
+          58
+        ],
+        "diameter": 29,
+        "maximum_order": 1682,
+        "s": 29
+      },
+      {
+        "attaining_invariant_factors": [
+          30,
+          60
+        ],
+        "diameter": 30,
+        "maximum_order": 1800,
+        "s": 30
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          660
+        ],
+        "diameter": 31,
+        "maximum_order": 1980,
+        "s": 31
+      },
+      {
+        "attaining_invariant_factors": [
+          5,
+          420
+        ],
+        "diameter": 32,
+        "maximum_order": 2100,
+        "s": 32
+      },
+      {
+        "attaining_invariant_factors": [
+          33,
+          66
+        ],
+        "diameter": 33,
+        "maximum_order": 2178,
+        "s": 33
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          792
+        ],
+        "diameter": 34,
+        "maximum_order": 2376,
+        "s": 34
+      },
+      {
+        "attaining_invariant_factors": [
+          35,
+          70
+        ],
+        "diameter": 35,
+        "maximum_order": 2450,
+        "s": 35
+      },
+      {
+        "attaining_invariant_factors": [
+          36,
+          72
+        ],
+        "diameter": 36,
+        "maximum_order": 2592,
+        "s": 36
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          936
+        ],
+        "diameter": 37,
+        "maximum_order": 2808,
+        "s": 37
+      },
+      {
+        "attaining_invariant_factors": [
+          7,
+          420
+        ],
+        "diameter": 38,
+        "maximum_order": 2940,
+        "s": 38
+      },
+      {
+        "attaining_invariant_factors": [
+          39,
+          78
+        ],
+        "diameter": 39,
+        "maximum_order": 3042,
+        "s": 39
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          1092
+        ],
+        "diameter": 40,
+        "maximum_order": 3276,
+        "s": 40
+      },
+      {
+        "attaining_invariant_factors": [
+          41,
+          82
+        ],
+        "diameter": 41,
+        "maximum_order": 3362,
+        "s": 41
+      },
+      {
+        "attaining_invariant_factors": [
+          5,
+          720
+        ],
+        "diameter": 42,
+        "maximum_order": 3600,
+        "s": 42
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          1260
+        ],
+        "diameter": 43,
+        "maximum_order": 3780,
+        "s": 43
+      },
+      {
+        "attaining_invariant_factors": [
+          44,
+          88
+        ],
+        "diameter": 44,
+        "maximum_order": 3872,
+        "s": 44
+      },
+      {
+        "attaining_invariant_factors": [
+          7,
+          588
+        ],
+        "diameter": 45,
+        "maximum_order": 4116,
+        "s": 45
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          1440
+        ],
+        "diameter": 46,
+        "maximum_order": 4320,
+        "s": 46
+      },
+      {
+        "attaining_invariant_factors": [
+          5,
+          900
+        ],
+        "diameter": 47,
+        "maximum_order": 4500,
+        "s": 47
+      },
+      {
+        "attaining_invariant_factors": [
+          48,
+          96
+        ],
+        "diameter": 48,
+        "maximum_order": 4608,
+        "s": 48
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          1632
+        ],
+        "diameter": 49,
+        "maximum_order": 4896,
+        "s": 49
+      },
+      {
+        "attaining_invariant_factors": [
+          50,
+          100
+        ],
+        "diameter": 50,
+        "maximum_order": 5000,
+        "s": 50
+      },
+      {
+        "attaining_invariant_factors": [
+          51,
+          102
+        ],
+        "diameter": 51,
+        "maximum_order": 5202,
+        "s": 51
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          1836
+        ],
+        "diameter": 52,
+        "maximum_order": 5508,
+        "s": 52
+      },
+      {
+        "attaining_invariant_factors": [
+          53,
+          106
+        ],
+        "diameter": 53,
+        "maximum_order": 5618,
+        "s": 53
+      },
+      {
+        "attaining_invariant_factors": [
+          54,
+          108
+        ],
+        "diameter": 54,
+        "maximum_order": 5832,
+        "s": 54
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          2052
+        ],
+        "diameter": 55,
+        "maximum_order": 6156,
+        "s": 55
+      },
+      {
+        "attaining_invariant_factors": [
+          56,
+          112
+        ],
+        "diameter": 56,
+        "maximum_order": 6272,
+        "s": 56
+      },
+      {
+        "attaining_invariant_factors": [
+          5,
+          1320
+        ],
+        "diameter": 57,
+        "maximum_order": 6600,
+        "s": 57
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          2280
+        ],
+        "diameter": 58,
+        "maximum_order": 6840,
+        "s": 58
+      },
+      {
+        "attaining_invariant_factors": [
+          7,
+          1008
+        ],
+        "diameter": 59,
+        "maximum_order": 7056,
+        "s": 59
+      },
+      {
+        "attaining_invariant_factors": [
+          11,
+          660
+        ],
+        "diameter": 60,
+        "maximum_order": 7260,
+        "s": 60
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          2520
+        ],
+        "diameter": 61,
+        "maximum_order": 7560,
+        "s": 61
+      },
+      {
+        "attaining_invariant_factors": [
+          5,
+          1560
+        ],
+        "diameter": 62,
+        "maximum_order": 7800,
+        "s": 62
+      },
+      {
+        "attaining_invariant_factors": [
+          63,
+          126
+        ],
+        "diameter": 63,
+        "maximum_order": 7938,
+        "s": 63
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          2772
+        ],
+        "diameter": 64,
+        "maximum_order": 8316,
+        "s": 64
+      },
+      {
+        "attaining_invariant_factors": [
+          65,
+          130
+        ],
+        "diameter": 65,
+        "maximum_order": 8450,
+        "s": 65
+      },
+      {
+        "attaining_invariant_factors": [
+          7,
+          1260
+        ],
+        "diameter": 66,
+        "maximum_order": 8820,
+        "s": 66
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          3036
+        ],
+        "diameter": 67,
+        "maximum_order": 9108,
+        "s": 67
+      },
+      {
+        "attaining_invariant_factors": [
+          68,
+          136
+        ],
+        "diameter": 68,
+        "maximum_order": 9248,
+        "s": 68
+      },
+      {
+        "attaining_invariant_factors": [
+          69,
+          138
+        ],
+        "diameter": 69,
+        "maximum_order": 9522,
+        "s": 69
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          3312
+        ],
+        "diameter": 70,
+        "maximum_order": 9936,
+        "s": 70
+      },
+      {
+        "attaining_invariant_factors": [
+          11,
+          924
+        ],
+        "diameter": 71,
+        "maximum_order": 10164,
+        "s": 71
+      },
+      {
+        "attaining_invariant_factors": [
+          5,
+          2100
+        ],
+        "diameter": 72,
+        "maximum_order": 10500,
+        "s": 72
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          3600
+        ],
+        "diameter": 73,
+        "maximum_order": 10800,
+        "s": 73
+      },
+      {
+        "attaining_invariant_factors": [
+          74,
+          148
+        ],
+        "diameter": 74,
+        "maximum_order": 10952,
+        "s": 74
+      },
+      {
+        "attaining_invariant_factors": [
+          75,
+          150
+        ],
+        "diameter": 75,
+        "maximum_order": 11250,
+        "s": 75
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          3900
+        ],
+        "diameter": 76,
+        "maximum_order": 11700,
+        "s": 76
+      },
+      {
+        "attaining_invariant_factors": [
+          5,
+          2400
+        ],
+        "diameter": 77,
+        "maximum_order": 12000,
+        "s": 77
+      },
+      {
+        "attaining_invariant_factors": [
+          78,
+          156
+        ],
+        "diameter": 78,
+        "maximum_order": 12168,
+        "s": 78
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          4212
+        ],
+        "diameter": 79,
+        "maximum_order": 12636,
+        "s": 79
+      },
+      {
+        "attaining_invariant_factors": [
+          7,
+          1848
+        ],
+        "diameter": 80,
+        "maximum_order": 12936,
+        "s": 80
+      },
+      {
+        "attaining_invariant_factors": [
+          81,
+          162
+        ],
+        "diameter": 81,
+        "maximum_order": 13122,
+        "s": 81
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          4536
+        ],
+        "diameter": 82,
+        "maximum_order": 13608,
+        "s": 82
+      },
+      {
+        "attaining_invariant_factors": [
+          83,
+          166
+        ],
+        "diameter": 83,
+        "maximum_order": 13778,
+        "s": 83
+      },
+      {
+        "attaining_invariant_factors": [
+          13,
+          1092
+        ],
+        "diameter": 84,
+        "maximum_order": 14196,
+        "s": 84
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          4872
+        ],
+        "diameter": 85,
+        "maximum_order": 14616,
+        "s": 85
+      },
+      {
+        "attaining_invariant_factors": [
+          86,
+          172
+        ],
+        "diameter": 86,
+        "maximum_order": 14792,
+        "s": 86
+      },
+      {
+        "attaining_invariant_factors": [
+          5,
+          3060
+        ],
+        "diameter": 87,
+        "maximum_order": 15300,
+        "s": 87
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          5220
+        ],
+        "diameter": 88,
+        "maximum_order": 15660,
+        "s": 88
+      },
+      {
+        "attaining_invariant_factors": [
+          89,
+          178
+        ],
+        "diameter": 89,
+        "maximum_order": 15842,
+        "s": 89
+      },
+      {
+        "attaining_invariant_factors": [
+          90,
+          180
+        ],
+        "diameter": 90,
+        "maximum_order": 16200,
+        "s": 90
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          5580
+        ],
+        "diameter": 91,
+        "maximum_order": 16740,
+        "s": 91
+      },
+      {
+        "attaining_invariant_factors": [
+          5,
+          3420
+        ],
+        "diameter": 92,
+        "maximum_order": 17100,
+        "s": 92
+      },
+      {
+        "attaining_invariant_factors": [
+          11,
+          1584
+        ],
+        "diameter": 93,
+        "maximum_order": 17424,
+        "s": 93
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          5952
+        ],
+        "diameter": 94,
+        "maximum_order": 17856,
+        "s": 94
+      },
+      {
+        "attaining_invariant_factors": [
+          95,
+          190
+        ],
+        "diameter": 95,
+        "maximum_order": 18050,
+        "s": 95
+      },
+      {
+        "attaining_invariant_factors": [
+          96,
+          192
+        ],
+        "diameter": 96,
+        "maximum_order": 18432,
+        "s": 96
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          6336
+        ],
+        "diameter": 97,
+        "maximum_order": 19008,
+        "s": 97
+      },
+      {
+        "attaining_invariant_factors": [
+          98,
+          196
+        ],
+        "diameter": 98,
+        "maximum_order": 19208,
+        "s": 98
+      },
+      {
+        "attaining_invariant_factors": [
+          99,
+          198
+        ],
+        "diameter": 99,
+        "maximum_order": 19602,
+        "s": 99
+      },
+      {
+        "attaining_invariant_factors": [
+          3,
+          6732
+        ],
+        "diameter": 100,
+        "maximum_order": 20196,
+        "s": 100
+      }
+    ],
+    "formula_and_attaining_pair_comparisons": 99,
+    "s_range": [
+      2,
+      100
+    ]
+  },
+  "lower_range_formulas": {
+    "even_representations": 4912,
+    "odd_representations": 5850,
+    "t_range": [
+      0,
+      12
+    ]
+  },
+  "odd_residue_counts": {
+    "diamond_residue_comparisons": 600,
+    "odd_c_range": [
+      3,
+      31
+    ],
+    "s_range": [
+      1,
+      40
+    ]
+  },
+  "perfect_set_domain_correction": {
+    "corrected_unit_multiplier": 5,
+    "distinct_coefficient_images": 13,
+    "generators": [
+      2,
+      10
+    ],
+    "group_order": 13,
+    "printed_domain_excluded": [
+      0,
+      4
+    ],
+    "s": 2
+  },
+  "scope": "Finite checks of the stated parameter ranges.",
+  "small_noncyclic_groups": {
+    "distinct_pairs": 18346,
+    "group_order_bound": 61,
+    "groups": [
+      {
+        "c": 2,
+        "k": 1,
+        "minimum_diameter": 2,
+        "order": 4
+      },
+      {
+        "c": 2,
+        "k": 2,
+        "minimum_diameter": 2,
+        "order": 8
+      },
+      {
+        "c": 2,
+        "k": 3,
+        "minimum_diameter": 3,
+        "order": 12
+      },
+      {
+        "c": 2,
+        "k": 4,
+        "minimum_diameter": 3,
+        "order": 16
+      },
+      {
+        "c": 2,
+        "k": 5,
+        "minimum_diameter": 4,
+        "order": 20
+      },
+      {
+        "c": 2,
+        "k": 6,
+        "minimum_diameter": 4,
+        "order": 24
+      },
+      {
+        "c": 2,
+        "k": 7,
+        "minimum_diameter": 5,
+        "order": 28
+      },
+      {
+        "c": 2,
+        "k": 8,
+        "minimum_diameter": 4,
+        "order": 32
+      },
+      {
+        "c": 2,
+        "k": 9,
+        "minimum_diameter": 5,
+        "order": 36
+      },
+      {
+        "c": 2,
+        "k": 10,
+        "minimum_diameter": 5,
+        "order": 40
+      },
+      {
+        "c": 2,
+        "k": 11,
+        "minimum_diameter": 5,
+        "order": 44
+      },
+      {
+        "c": 2,
+        "k": 12,
+        "minimum_diameter": 5,
+        "order": 48
+      },
+      {
+        "c": 2,
+        "k": 13,
+        "minimum_diameter": 6,
+        "order": 52
+      },
+      {
+        "c": 2,
+        "k": 14,
+        "minimum_diameter": 6,
+        "order": 56
+      },
+      {
+        "c": 2,
+        "k": 15,
+        "minimum_diameter": 6,
+        "order": 60
+      },
+      {
+        "c": 3,
+        "k": 1,
+        "minimum_diameter": 2,
+        "order": 9
+      },
+      {
+        "c": 3,
+        "k": 2,
+        "minimum_diameter": 3,
+        "order": 18
+      },
+      {
+        "c": 3,
+        "k": 3,
+        "minimum_diameter": 4,
+        "order": 27
+      },
+      {
+        "c": 3,
+        "k": 4,
+        "minimum_diameter": 4,
+        "order": 36
+      },
+      {
+        "c": 3,
+        "k": 5,
+        "minimum_diameter": 5,
+        "order": 45
+      },
+      {
+        "c": 3,
+        "k": 6,
+        "minimum_diameter": 6,
+        "order": 54
+      },
+      {
+        "c": 4,
+        "k": 1,
+        "minimum_diameter": 4,
+        "order": 16
+      },
+      {
+        "c": 4,
+        "k": 2,
+        "minimum_diameter": 4,
+        "order": 32
+      },
+      {
+        "c": 4,
+        "k": 3,
+        "minimum_diameter": 6,
+        "order": 48
+      },
+      {
+        "c": 5,
+        "k": 1,
+        "minimum_diameter": 4,
+        "order": 25
+      },
+      {
+        "c": 5,
+        "k": 2,
+        "minimum_diameter": 5,
+        "order": 50
+      },
+      {
+        "c": 6,
+        "k": 1,
+        "minimum_diameter": 6,
+        "order": 36
+      },
+      {
+        "c": 7,
+        "k": 1,
+        "minimum_diameter": 6,
+        "order": 49
+      }
+    ],
+    "maximum_orders": {
+      "2": 9,
+      "3": 18,
+      "4": 36,
+      "5": 50
+    },
+    "s_range": [
+      2,
+      5
+    ]
+  },
+  "status": "pass",
+  "sufficient_family": {
+    "admissible_families": 63,
+    "group_elements": 37744,
+    "t_range": [
+      1,
+      12
+    ]
+  }
+}

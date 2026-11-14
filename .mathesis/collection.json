@@ -1,7 +1,7 @@
 {
   "git_blobs": {
     ".github/workflows/pages.yml": "7879724db1358178aad7e9bed326a44be44f5a6a",
-    ".mathesis/generated.json": "9bd7e23775c5391a1d8634780620007c55759767",
+    ".mathesis/generated.json": "76d7757e1b52f36c00128617280b4fa358504047",
     "CHANGELOG.md": "1c8da5a39dc613183805af9960a6e55f7dc64fd9",
     "CITATION.cff": "02fccd813535c0cdf6af8de2dcd9ba35f2b2fed6",
     "CONTRIBUTING.md": "ea69168fc2cb506b57b00de1ef588aaf011aa3da",
@@ -14,12 +14,13 @@
     "manuscript/bajnok-beatty-conjectures/metadata.json": "15fc8bedadd6feb4ddbf465cb2277e7bf3a97a6d",
     "manuscript/bajnok-beatty-conjectures/note.tex": "8fb690cfc8013d083d85a3cec3ad4b4f716845e6",
     "manuscript/bajnok-beatty-conjectures/verify.py": "60b0aab80c0bd0a1e1811adf003fb9d9152c15a2",
-    "paper.json": "03f60becbe1d49551ab96f59c1105cf2cf14c521",
+    "paper.json": "d8c9a86fd3b79e3af30a33748f177010d235df7f",
     "paper.pdf": "0937895f32bb3deb83f81ecc5a6ea999d151f7ef",
     "site/en/index.html": "45dc3779967c0122f3ca330efe0a6bc706fd80b9",
-    "site/index.html": "15b2db0bc8927a63b5268d79175ea48a40e3a0dc",
+    "site/index.html": "13b0d6a889d16656775ecb8b0d44d495acf23755",
     "site/mathesis-materials.json": "6461b3a25827c16219d3e33c46a98c7febab3738",
     "site/zh/index.html": "071f354525ba6bd57903baf42fc708fb5c51f58c",
+    "source.archive": "2debd8759c748866bb2216012dc93b6b892fd4e2",
     "versions/v2/.mathesis/generated.json": "69395be0c79584193591f2fc6abc8c4221a4d6e6",
     "versions/v2/CHANGELOG.md": "1c8da5a39dc613183805af9960a6e55f7dc64fd9",
     "versions/v2/CITATION.cff": "02fccd813535c0cdf6af8de2dcd9ba35f2b2fed6",
@@ -34,12 +35,13 @@
     "versions/v2/manuscript/bajnok-beatty-conjectures/note.tex": "8fb690cfc8013d083d85a3cec3ad4b4f716845e6",
     "versions/v2/manuscript/bajnok-beatty-conjectures/verify.py": "60b0aab80c0bd0a1e1811adf003fb9d9152c15a2",
     "versions/v2/paper.json": "a63b65eb7469c6ae85694248c71aa7694324c661",
-    "versions/v2/paper.pdf": "0937895f32bb3deb83f81ecc5a6ea999d151f7ef"
+    "versions/v2/paper.pdf": "0937895f32bb3deb83f81ecc5a6ea999d151f7ef",
+    "versions/v2/source.archive": "2debd8759c748866bb2216012dc93b6b892fd4e2"
   },
   "schema": "mathesis.paper-collection.v1",
   "sha256": {
     ".github/workflows/pages.yml": "f15d983dcb8f324ffdedb50b05f7380e11fda8723d49b5c8f10ef0f414612372",
-    ".mathesis/generated.json": "63df444542eaf5f25d4ae31ae5677de7c5bcd2b623dfabd8558e72572b655061",
+    ".mathesis/generated.json": "790b7059ee33dfb8fc50c85502f3058ead5f4c5d0b8e5fa913161b3f315b1c5c",
     "CHANGELOG.md": "a24c33be5c0b6029489a2c8419bb55d317fd1d1c0fb6165e206910b266ee18ee",
     "CITATION.cff": "a0e10d98866a8c02cef7ed9f601a56915c9af0849d100778e2d81eacef6dcd77",
     "CONTRIBUTING.md": "fafd66e63160b2a88f433af56d2af2b0f7bf6ed2fd417d46b54446ce07c627ff",
@@ -52,12 +54,13 @@
     "manuscript/bajnok-beatty-conjectures/metadata.json": "5b55a2055f1ec7660039085815f558d9ba5f3fbc9990b4181c0cc0a2e264d5f6",
     "manuscript/bajnok-beatty-conjectures/note.tex": "dac20c89a7e03c529705cd8de462e3bcef7037d8aa29157e1e5f28543b2c8371",
     "manuscript/bajnok-beatty-conjectures/verify.py": "a1ff5757fbb19a2bbce705cd02aedc4b0148e560fb30ea7ea8a5e72da5dc9fde",
-    "paper.json": "0b042b0e4b3d9af7a87b8afb8e08a0926ccf64ab163b33cd818fe77c4014e6bc",
+    "paper.json": "b3182f1d4b4f348f1b0b8b3652756717fa6b4198002de00d4dc77811cf9d6e13",
     "paper.pdf": "a0fbaedc2c607e5862f3580fac346a6e5f16e7474e92a1cfe1d19225d09cefc8",
     "site/en/index.html": "2847366279438b152c163458b0c9193a99b668784815a9d4a5bded13fbcd6353",
-    "site/index.html": "6d7065ba40477e397b6893963f7d49a995ae45191c1f918fe86fd9171cb94c23",
+    "site/index.html": "df318d5eccbd1fc2b09ef2c47890588f6f187528d6836668fbc90b2ac8f57d6b",
     "site/mathesis-materials.json": "069ef9e207c481084f8bccd98b5d06598e8bae594e45dcbe41dcf966ce5b3e76",
     "site/zh/index.html": "e20c32c7574df622021728b91173c8c3fb3f98a6543d9994264451fd1954714f",
+    "source.archive": "64ea5cfdeed1218940783c144c01fd4515f45497ea15a837fc19d41d4bd4c043",
     "versions/v2/.mathesis/generated.json": "3c1a6153bded4bf24d202dff80ae39601d4d6425c381f16af2cc10d6c687226e",
     "versions/v2/CHANGELOG.md": "a24c33be5c0b6029489a2c8419bb55d317fd1d1c0fb6165e206910b266ee18ee",
     "versions/v2/CITATION.cff": "a0e10d98866a8c02cef7ed9f601a56915c9af0849d100778e2d81eacef6dcd77",
@@ -72,7 +75,8 @@
     "versions/v2/manuscript/bajnok-beatty-conjectures/note.tex": "dac20c89a7e03c529705cd8de462e3bcef7037d8aa29157e1e5f28543b2c8371",
     "versions/v2/manuscript/bajnok-beatty-conjectures/verify.py": "a1ff5757fbb19a2bbce705cd02aedc4b0148e560fb30ea7ea8a5e72da5dc9fde",
     "versions/v2/paper.json": "51dc8ac6470ed4cb48a134428464c93994acdc30387915d380d9a5862ca5cfc3",
-    "versions/v2/paper.pdf": "a0fbaedc2c607e5862f3580fac346a6e5f16e7474e92a1cfe1d19225d09cefc8"
+    "versions/v2/paper.pdf": "a0fbaedc2c607e5862f3580fac346a6e5f16e7474e92a1cfe1d19225d09cefc8",
+    "versions/v2/source.archive": "64ea5cfdeed1218940783c144c01fd4515f45497ea15a837fc19d41d4bd4c043"
   },
   "version": 2,
   "work": "bajnok-beatty-original-conjecture-4-1"

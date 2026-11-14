@@ -2,12 +2,12 @@
   "schema": "mathesis.materials.v1",
   "work": "bajnok-beatty-original-conjecture-4-1",
   "version": 2,
-  "repository_url": "https://github.com/mathesis-papers/6aec385ac094feef28f99ea6",
-  "site_url": "https://papers.trureturing.org/6aec385ac094feef28f99ea6/",
+  "repository_url": "https://github.com/mathesis-papers/10.5281-zenodo.23931730",
+  "site_url": "https://papers.trureturing.org/10.5281-zenodo.23931730/",
   "doi": "10.5281/zenodo.23931731",
   "reading": {
-    "en": "https://papers.trureturing.org/6aec385ac094feef28f99ea6/en/",
-    "zh": "https://papers.trureturing.org/6aec385ac094feef28f99ea6/zh/"
+    "en": "https://papers.trureturing.org/10.5281-zenodo.23931730/en/",
+    "zh": "https://papers.trureturing.org/10.5281-zenodo.23931730/zh/"
   },
   "slides": [],
   "visualizations": []

@@ -1,0 +1,124 @@
+{
+  "book": "bajnok-beatty-original-conjecture-4-1",
+  "pending_claims": [],
+  "results": {
+    "thm-classification": {
+      "claim": "collected:bajnok-beatty-original-conjecture-4-1:2:s1",
+      "gids": [
+        "D5/S3/FiniteGroups/BajnokBeattyAllRegimes.result"
+      ],
+      "comparison_verdict": "same",
+      "compared_public_gid": "D5/S3/FiniteGroups/BajnokBeattyAllRegimes.result",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8"
+    },
+    "lem-square": {
+      "claim": "collected:bajnok-beatty-original-conjecture-4-1:2:s2",
+      "gids": [],
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S3/FiniteGroups/BajnokBeattyCayleyNecessity.oddLattice_cover",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "formalization_request": {
+        "label": "Square covering",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/131"
+      }
+    },
+    "lem-rigidity": {
+      "claim": "collected:bajnok-beatty-original-conjecture-4-1:2:s3",
+      "gids": [
+        "D5/S3/FiniteGroups/NearSquareLatticeRigidity.near_square_rigidity"
+      ],
+      "comparison_verdict": "same",
+      "compared_public_gid": "D5/S3/FiniteGroups/NearSquareLatticeRigidity.near_square_rigidity",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8"
+    },
+    "lem-congruences": {
+      "claim": "collected:bajnok-beatty-original-conjecture-4-1:2:s4",
+      "gids": [
+        "D5/S3/FiniteGroups/BajnokBeattyCayleyNecessity.top_strip_necessity"
+      ],
+      "comparison_verdict": "same",
+      "compared_public_gid": "D5/S3/FiniteGroups/BajnokBeattyCayleyNecessity.top_strip_necessity",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8"
+    },
+    "lem-family": {
+      "claim": "collected:bajnok-beatty-original-conjecture-4-1:2:s5",
+      "gids": [
+        "D5/S3/FiniteGroups/BajnokBeattyCayleySufficiency.result"
+      ],
+      "comparison_verdict": "same",
+      "compared_public_gid": "D5/S3/FiniteGroups/BajnokBeattyCayleySufficiency.result",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8"
+    },
+    "lem-lower": {
+      "claim": "collected:bajnok-beatty-original-conjecture-4-1:2:s6",
+      "gids": [],
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S3/FiniteGroups/BajnokBeattyAllRegimes.result",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "formalization_request": {
+        "label": "Lower ranges",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/132"
+      }
+    },
+    "cor-family-max": {
+      "claim": "collected:bajnok-beatty-original-conjecture-4-1:2:s7",
+      "gids": [],
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S3/FiniteGroups/BajnokBeattyAllRegimes.result",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "formalization_request": {
+        "label": "Maximum within the family",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/133"
+      }
+    },
+    "cor-even": {
+      "claim": "collected:bajnok-beatty-original-conjecture-4-1:2:s8",
+      "gids": [],
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S3/FiniteGroups/LeeSquareCompression.arbitrary_pair_upper_bound",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "formalization_request": {
+        "label": "Even first invariant factor",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/134"
+      }
+    },
+    "lem-odd": {
+      "claim": "collected:bajnok-beatty-original-conjecture-4-1:2:s9",
+      "gids": [],
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S3/FiniteGroups/LeeSquareCompression.arbitrary_pair_upper_bound",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "formalization_request": {
+        "label": "Odd first invariant factor",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/135"
+      }
+    },
+    "cor-global": {
+      "claim": "collected:bajnok-beatty-original-conjecture-4-1:2:s10",
+      "gids": [
+        "D5/S3/FiniteGroups/BajnokBeattySharpMaximum.sharp_maximum"
+      ],
+      "comparison_verdict": "same",
+      "compared_public_gid": "D5/S3/FiniteGroups/BajnokBeattySharpMaximum.sharp_maximum",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8"
+    },
+    "cor-universal": {
+      "claim": "collected:bajnok-beatty-original-conjecture-4-1:2:s11",
+      "gids": [],
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S3/FiniteGroups/BajnokBeattySharpMaximum.sharp_maximum",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "formalization_request": {
+        "label": "Universal bound and equality",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/136"
+      }
+    }
+  },
+  "stage": "complete",
+  "titles": {
+    "en": "Bajnok–Beatty Conjectures 4.1 and 1.6 (arXiv:2406.04045v1, Section 4, p. 10; Section 1, p. 3): classification and extremal noncyclic order",
+    "zh": "Bajnok–Beatty Conjectures 4.1 and 1.6 (arXiv:2406.04045v1, Section 4, p. 10; Section 1, p. 3): classification and extremal noncyclic order"
+  },
+  "version": 2,
+  "work": "bajnok-beatty-original-conjecture-4-1"
+}

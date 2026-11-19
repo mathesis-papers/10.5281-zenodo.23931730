@@ -1,0 +1,224 @@
+\documentclass{beamer}
+\input{tbook-deck}
+\title{两个动作、菱形与正方形}
+\subtitle{Bajnok--Beatty Conjectures 4.1 and 1.6}
+\author{Haobo Ma \and Wenlin Zhang}
+\institute{}
+\date{}
+\begin{document}
+% Manuscript: §1, Theorem 1; §6, Corollary 10
+\begin{frame}
+\titlepage
+\note{本报告解释 Haobo Ma 与 Wenlin Zhang 第 2 版论文。原始问题来自 B. Bajnok 与 W. K. Beatty。先讲两个动作的游戏，再给出分类与极值公式。}
+\end{frame}
+% Manuscript: §1–§6, proof dependency order
+\begin{frame}{问题与路线}
+\begin{enumerate}
+\item 两个动作能否覆盖整个群？
+\item 菱形变成正方形后，同余障碍从哪里来？
+\item 放开群的形状，最大阶是多少？
+\end{enumerate}
+\medskip
+关键路线：覆盖 $\to$ 关系格子 $\to$ 刚性或余数计数。
+\note{先给出具体问题和答案，再解释其原因。两条证明路线共用系数格子，但分别研究接近上界的刚性与模第一不变因子的计数。}
+\end{frame}
+\section{分类与证明机制}
+% Manuscript: §1, definition of s-spanning pair
+\begin{frame}{一个八格的例子}
+在 $\mathbb Z/2\mathbb Z\times\mathbb Z/4\mathbb Z$ 中取
+\[a=(1,1),\qquad b=(0,1).\]
+\begin{center}
+\begin{tabular}{c|cccc}
+第一坐标 & \multicolumn{4}{c}{第二坐标 $0,1,2,3$}\\\hline
+$0$ & $0$ & $b$ & $2b$ & $-b$\\
+$1$ & $a-b$ & $a$ & $a+b$ & $-a$
+\end{tabular}
+\end{center}
+每个位置至多两步；允许倒走、重复。
+\note{模运算就像钟面。读出两行中的每个表达式，它们依次对应第二坐标零、一、二、三。这里不用抽象定义就能看到半径二的覆盖。}
+\end{frame}
+% Manuscript: §1, definition; §5, Theorem 1
+\begin{frame}{完整问题}
+记 $G_k=\mathbb Z/2\mathbb Z\times\mathbb Z/(2k)\mathbb Z$，阶为 $4k$。
+\[\forall g\in G_k\quad \exists x,y\in\mathbb Z:\quad
+ g=xa+yb,\quad |x|+|y|\le s.\]
+要求 $a\ne b$，$k,s\ge1$。
+\begin{block}{半径四的反直觉现象}
+$k=7$：$28$ 个位置，任何生成对都失败。\\
+$k=8$：$32$ 个位置，存在成功的生成对。
+\end{block}
+\note{有符号系数表示净步数，代价取绝对值之和。非循环表示单个元素无法生成整个群。二十八与三十二的对比由接下来完整定理推出，不是计算实验。}
+\end{frame}
+% Manuscript: §1, Theorem 1
+\begin{frame}{猜想 4.1：完整分类}
+\begin{bookresult}{thm-classification}
+对 $k,s\ge1$，$G_k$ 存在 $s$-生成对恰好在：
+\begin{enumerate}
+\item $s$ 为奇数，$2k\le s^2-1$；
+\item $s$ 为偶数，$2k\le s^2-s$；
+\item $s\equiv0\pmod4$，$k$ 为偶数，\\
+$s^2-s<2k\le s^2$；
+\item $s\equiv2\pmod4$，$k\equiv2\pmod4$，\\
+$s^2-s<2k\le s^2$。
+\end{enumerate}
+\end{bookresult}
+\note{原始问题定位为 arXiv:2406.04045v1，第十页猜想四点一。注意较高区间的下边界严格，较低区间包含等号。半径一无可行正整数。Bajnok 与 Beatty 已解决前三类大小问题中的已知范围；本文完成较高区间的同余分类。}
+\end{frame}
+% Manuscript: §2, relation lattice and Lemma 2
+\begin{frame}{从走法到菱形与格子}
+\[D_s=\{(x,y)\in\mathbb Z^2:|x|+|y|\le s\}.\]
+\[f(x,y)=xa+yb,\qquad K=\ker f.\]
+\begin{itemize}
+\item $|D_s|=1+4(1+\cdots+s)=2s^2+2s+1$。
+\item 相差 $K$ 中向量的系数有相同终点。
+\item 覆盖等价于每个 $K$ 陪集都遇到 $D_s$。
+\end{itemize}
+模 $2$ 的结构还给出 $K\subseteq2\mathbb Z^2$，但 $K\not\subseteq4\mathbb Z^2$。
+\note{格子是所有回到原点的整数关系。菱形的点数给一个粗上界，尚不足以区分二十八和三十二。核的奇偶结构才给更强的平方上界。}
+\end{frame}
+% Manuscript: §2, Lemma 2
+\begin{frame}{菱形转成正方形}
+\[T(u,v)=(u+v,u-v),\qquad M=T^{-1}K.\]
+\[|x|+|y|=\max\{|x+y|,|x-y|\}.\]
+\begin{bookresult}{lem-square}
+每个 $M$ 陪集都在 $\{0,\ldots,s-1\}^2$ 有代表。
+\[ [\mathbb Z^2:M]=2k\le s^2.\]
+\end{bookresult}
+关键：整数奇偶性决定要用哪一个平移。
+\note{这是一条含所有半径的书面命题。奇偶半径的覆盖论证分开：偶半径先加 $(1,0)$，使和差为奇数；奇半径和差为偶数。指数因坐标变换像的指数二而减半。不能只把菱形旋转后忽略整数点。}
+\end{frame}
+% Manuscript: §3, Lemma 3
+\begin{frame}{几乎装满，形状就被确定}
+\begin{bookresult}{lem-rigidity}
+$n\ge2$，$0\le\delta{}<n$，指数 $n^2-\delta$；每个陪集均遇到 $n\times n$ 正方形。则
+\[L=\mathbb Z(n,-\epsilon B)+\mathbb Z(-A,\epsilon n),\]
+\[0\le A,B<n,\quad \epsilon=\pm1,\quad AB=\delta.\]
+\end{bookresult}
+证明的挤压：$n(n-1)<d=n^2-\delta$，且 $n^2<2d$。
+\note{覆盖右边界外的一列产生关系向量。两条向量的行列式是指数的正倍数，又至多为平方，因此只能等于指数。若两条向量都未到边界，就至多为 $n(n-1)$，矛盾。附录给出详细不等式，包括零亏损。}
+\end{frame}
+% Manuscript: §3, Lemma 4
+\begin{frame}{同余障碍从哪里来？}
+\begin{bookresult}{lem-congruences}
+$s=2t$，$k=2t^2-r$，$0\le r<t$ 时，
+\[2\mid r,\qquad t\text{ 为奇数}\Longrightarrow4\mid r.\]
+\end{bookresult}
+\begin{itemize}
+\item 刚性给出 $AB=2r$。
+\item 坐标和为偶数，故 $A=2u,B=2v$；于是 $r=2uv$。
+\item 若 $t,u,v$ 都奇，变换后的基落入 $4\mathbb Z^2$，矛盾。
+\end{itemize}
+\note{在较高范围，亏损小于 $t$，因此刚性假设满足。若奇数 $t$ 且 $r$ 仅含一个因子二，则 $u,v$ 都奇。两基向量变换后每个坐标都被四整除，违背此前核不全在四倍格子中的事实。}
+\end{frame}
+% Manuscript: §4, Lemma 5; §5, Lemma 6
+\begin{frame}{构造完成反方向}
+\begin{bookresult}{lem-family}
+$t\ge1$，$0\le j<t$，$t$ 或 $j$ 为偶数，则
+$\mathbb Z/2\mathbb Z\times\mathbb Z/(4(t^2-j))\mathbb Z$
+有 $2t$-生成对。
+\end{bookresult}
+\[V=(2(t-j),-2(t+j)),\]
+\[W=(2(t-1),2(t+1)).\]
+较高范围取 $r=2j$；较低范围用相邻坐标的显式生成对。
+\note{行列式为 $8(t^2-j)$，坐标最大公因数为二，所以商群具有需要的不变因子。变换后用减去关系向量的最小非负代表论证覆盖，端点 $t=1,j=0$ 单独处理。下范围的完整整数表示在阅读版引理六中。}
+\end{frame}
+\section{最大非循环阶}
+% Manuscript: §6, Corollary 10
+\begin{frame}{猜想 1.6：全体非循环群}
+\begin{bookresult}{cor-global}
+$s\ge3$ 时最大阶为：
+\[N(s)=2s^2\quad (2s+1\text{ 为素数});\]
+\[N(s)=2s^2+2s-\frac{p^2-1}{2}\quad (2s+1\text{ 为合数}),\]
+$p$ 为 $2s+1$ 的最小素因子。
+\end{bookresult}
+$s=3$：$N(3)=18$；\quad $s=4$：$N(4)=36$。
+\medskip
+达到构造：Bajnok 与 Beatty；本文补齐任意生成对的上界。
+\note{最大值包含上界和达到两个方向，不能把只有上界的声明当作整个定理。这里对应的精确 Lean 定理两者都有。第一因子固定为二时，半径四的最大阶是三十二；允许第一因子三后达到三十六。}
+\end{frame}
+% Manuscript: §6, Lemma 9
+\begin{frame}{最稀少的余数类限制大小}
+写 $G=\mathbb Z/c\mathbb Z\times\mathbb Z/(ck)\mathbb Z$。
+每个系数模 $c$ 的余数类必须覆盖 $k$ 个元素。
+\medskip
+$c$ 奇时，和差坐标模 $c$ 可逆，点数为
+\[E_iE_j+O_iO_j.\]
+$s=4,c=3$ 时：
+\begin{itemize}
+\item 余数 $2$：$-4,-1,2$，计数 $(E,O)=(2,1)$；
+\item 余数 $0$：$-3,0,3$，计数 $(1,2)$。
+\end{itemize}
+因此 $k\le2\cdot1+1\cdot2=4$，阶至多 $3^2\cdot4=36$。
+\note{每个余数类对应 $cG$ 的一个陪集，有 $k$ 个群元素。表示不能跨系数余数类，因为核在 $c\mathbb Z^2$。和差必须同奇偶才回到整数系数，所以出现偶乘偶加奇乘奇。这个例子显示三段计数的中间段。}
+\end{frame}
+% Manuscript: §6, proof of Corollary 10
+\begin{frame}{为什么是最小素因子？}
+超过 $2s^2$ 只能出现在
+\[s=ct+\frac{c-1}{2},\qquad c\mid2s+1.\]
+此时
+\[|G|\le2s^2+2s-\frac{c^2-1}{2}.\]
+惩罚项随 $c$ 增大：最小素因子 $p$ 给出最佳值。
+\medskip
+若 $2s+1$ 为素数，唯一候选 $c=2s+1$ 导致 $t=0,k=0$，不可行。
+\note{中间段余数严格更大时上界回落到基线下方，最后一段也如此。复合数时最小素因子给出最大的候选上界，Bajnok 与 Beatty 的构造取 $t=((2s+1)/p-1)/2$ 达到它。}
+\end{frame}
+% Manuscript: §6, Corollary 11 and perfect spanning sets paragraph
+\begin{frame}{等号与结论边界}
+\begin{bookresult}{cor-universal}
+$s\ge3$ 时 $|G|\le2s^2+2s-4$。等号恰好对应
+\[s\equiv1\pmod3,\]
+\[m=(2s^2+2s-4)/3,\]
+\[G\simeq\mathbb Z/3\mathbb Z\times\mathbb Z/m\mathbb Z.\]
+\end{bookresult}
+小半径：$N(2)=9$；半径一无非循环例子。
+\medskip
+完美二元生成集必在循环群中；纠正乘数域后的完整形状断言未在本文证明。
+\note{这个包含等号同构类型的结论保留书面证明，不能用只有数值上界的 Lean 定理给整个框作验证。完美表示的阶为 $2s^2+2s+1$，严格超过非循环上界。注意循环性不等于完整形状分类。}
+\end{frame}
+\appendix
+\section{补充推导}
+% Manuscript: §3, proof of Lemma 3
+\begin{frame}{附录：刚性的决定性不等式}
+设 $d=n^2-\delta>n(n-1)$。右边外一列的覆盖给出
+\[(p,-b),(r,c)\in L,\quad1\le p,r\le n.\]
+若无短水平向量，最小正 $b,c<n$ 满足 $b+c\le n$。
+\[0<pc+rb\le n(b+c)\le n^2<2d.\]
+行列式是 $d$ 的倍数，故等于 $d$。
+\[b+c=n,\qquad p=n\ \text{或}\ r=n.\]
+若有短水平向量，则同样挤压得到 $\delta=0$。
+\note{区间 $[0,n-1-b]$ 与 $[c,n-1]$ 必覆盖所有整数高度，所以 $b+c\le n$。若该和小于 $n$，或者两个横坐标都小于 $n$，行列式至多为 $n(n-1)$，与指数下界矛盾。用差向量即可得到所述标准基。}
+\end{frame}
+% Manuscript: §6, Lemma 9
+\begin{frame}{附录：完整三段余数界}
+\begin{bookresult}{lem-odd}
+$c\ge3$ 为奇数，$s=ct+r$，$0\le r<c$，则
+\[k\le\begin{cases}
+2t^2,&0\le r<(c-1)/2,\\
+2t(t+1),&(c-1)/2\le r<c-1,\\
+2t(t+1)+1,&r=c-1.
+\end{cases}\]
+适用于任意生成对，包含 $t=0$。
+\end{bookresult}
+\note{选择 $i=s+1$ 的代表，奇偶交替。第一段有 $2t$ 个，取两个相同余数。中间段对 $s+1,s+2$ 各有 $2t+1$ 个，首项奇偶相反。最后一段取相同余数，得 $t^2+(t+1)^2$。}
+\end{frame}
+% Manuscript: Bibliography; §6, attaining constructions
+\begin{frame}{文献与归属}
+\small
+Haobo Ma、Wenlin Zhang，第 2 版论文。\\
+\href{https://doi.org/10.5281/zenodo.23931731}{版本 DOI: 10.5281/zenodo.23931731}。
+\medskip
+
+B. Bajnok、W. K. Beatty：原始问题、已知范围与达到构造。\\
+\href{https://arxiv.org/abs/2406.04045v1}{arXiv:2406.04045v1}；期刊 DOI: 10.2140/cnt.2025.14.1。
+\medskip
+
+R. Dougherty、V. Faber：商格子观点，命题 2。\\
+DOI: 10.1137/S0895480100372899。
+\medskip
+
+完整证明与贡献请求见本书精确陈述及文献章。
+\note{所有猜想编号使用 Bajnok 与 Beatty 原始预印本版本。把原始数学作者、以前的构造作者与形式化贡献者区分开。书的配色由精确命题对应关系决定，不从论文级链接推断整篇验证。}
+\end{frame}
+% Manuscript: statement evidence for cited results
+\FormalVerification
+\end{document}

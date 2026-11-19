@@ -1,0 +1,13 @@
+kind = "academic"
+editions = ["zh", "en"]
+aspect = "4:3"
+structure_colour = "#0e2c8e"
+short_author = "H. Ma, W. Zhang"
+short_title = "Two moves"
+institution = "Haobo Ma: Chrono AI, Singapore; Wenlin Zhang: NUS and Chrono AI, Singapore"
+date = "Paper version 2 · 2026"
+navigation_symbols = false
+
+[title]
+zh = "两个动作、菱形与正方形"
+en = "Two moves, diamonds and squares"

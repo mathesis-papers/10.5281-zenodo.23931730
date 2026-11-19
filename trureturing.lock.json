@@ -1,0 +1,49 @@
+{
+  "schema": "trureturing-books.lock.v1",
+  "repo": "the-omega-institute/trureturing",
+  "branch": "dev",
+  "commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+  "pinned_at": "2026-11-08T12:32:04Z",
+  "declarations": {
+    "D5/S3/FiniteGroups/BajnokBeattyAllRegimes.result": {
+      "module": "D5/S3/FiniteGroups/BajnokBeattyAllRegimes",
+      "name": "D5.S3.FiniteGroups.BajnokBeattyAllRegimes.result",
+      "kind": "theorem",
+      "statement_id": "sha256:ee1ae83b20697b81b9fc002add719f4eac1f2571c15b6f1c0dcdb2918b0eaf57",
+      "line": 339,
+      "signature": "theorem result (k s : ℕ) (hk : 0 < k) (hs : 0 < s) : (∃ a b : ZMod 2 × ZMod (2*k), a ≠ b ∧ ∀ g, ∃ x y : ℤ, g = x • a + y • b ∧ |x|+|y| ≤ (s : ℤ)) ↔ (Odd s ∧ 2*k ≤ s^2-1) ∨ (Even s ∧ 2*k ≤ s^2-s) ∨ (s%4=0 ∧ Even k ∧ s^2-s < 2*k ∧ 2*k ≤ s^2) ∨ (s%4=2 ∧ k%4=2 ∧ s^2-s < 2*k ∧ 2*k ≤ s^2)"
+    },
+    "D5/S3/FiniteGroups/BajnokBeattyCayleyNecessity.top_strip_necessity": {
+      "module": "D5/S3/FiniteGroups/BajnokBeattyCayleyNecessity",
+      "name": "D5.S3.FiniteGroups.BajnokBeattyCayleyNecessity.top_strip_necessity",
+      "kind": "theorem",
+      "statement_id": "sha256:46b1c8aa91cbdf057151d5505a708ac9b32e688dd000110e0e3173b914d3e47c",
+      "line": 305,
+      "signature": "theorem top_strip_necessity {t r : ℤ} {k : ℕ} (ht : 1 ≤ t) (hr : 0 ≤ r) (hrt : r < t) (hk : (k : ℤ) = 2 * t ^ 2 - r) (a b : Target k) (hcover : ∀ g : Target k, ∃ x y : ℤ, |x| + |y| ≤ 2*t ∧ x • a + y • b = g) : 2 ∣ r ∧ (Odd t → 4 ∣ r)"
+    },
+    "D5/S3/FiniteGroups/BajnokBeattyCayleySufficiency.result": {
+      "module": "D5/S3/FiniteGroups/BajnokBeattyCayleySufficiency",
+      "name": "D5.S3.FiniteGroups.BajnokBeattyCayleySufficiency.result",
+      "kind": "theorem",
+      "statement_id": "sha256:44e2fe3edb85ffb147f6a4c4b2b33870b3dbe2a9d1dee4c277b2a40bf9dbb2a9",
+      "line": 265,
+      "signature": "theorem result (t j : ℕ) (ht : 1 ≤ t) (hjt : j < t) (hpar : Even t ∨ Even j) : ∃ a b : ZMod 2 × ZMod (4 * (t ^ 2 - j)), a ≠ b ∧ ∀ g, ∃ x y : ℤ, g = x • a + y • b ∧ |x| + |y| ≤ 2 * (t : ℤ)"
+    },
+    "D5/S3/FiniteGroups/BajnokBeattySharpMaximum.sharp_maximum": {
+      "module": "D5/S3/FiniteGroups/BajnokBeattySharpMaximum",
+      "name": "D5.S3.FiniteGroups.BajnokBeattySharpMaximum.sharp_maximum",
+      "kind": "theorem",
+      "statement_id": "sha256:d75a6a64fe319f462174bfa2442b0298fe71c1542badf76627c32ef99fe9d712",
+      "line": 390,
+      "signature": "theorem sharp_maximum (s : ℕ) (hs : 3 ≤ s) : (∀ (G : Type u) [AddCommGroup G] [Finite G], ¬ IsAddCyclic G → ∀ a b : G, a ≠ b → (∀ g : G, ∃ x y : ℤ, |x| + |y| ≤ (s : ℤ) ∧ x • a + y • b = g) → Nat.card G ≤ MaximumOrder s ∧ Nat.card G ≤ 2 * s^2 + 2 * s - 4) ∧ (∃ c k : ℕ, 2 ≤ c ∧ 1 ≤ k ∧ ∃ a b : ZMod c × ZMod (c * k), a ≠ b ∧ ¬ IsAddCyclic (ZMod c × ZMod (c * k)) ∧ (∀ g : ZMod c × ZMod (c * k), ∃ x y : ℤ, |x| + |y| ≤ (s : ℤ) ∧ x • a + y • b = g) ∧ Finite (ZMod c × ZMod (c * k)) ∧ Nat.card (ZMod c × ZMod (c * k)) = MaximumOrder s)"
+    },
+    "D5/S3/FiniteGroups/NearSquareLatticeRigidity.near_square_rigidity": {
+      "module": "D5/S3/FiniteGroups/NearSquareLatticeRigidity",
+      "name": "D5.S3.FiniteGroups.NearSquareLatticeRigidity.near_square_rigidity",
+      "kind": "theorem",
+      "statement_id": "sha256:fd275fcbd775e3907a4d5fe1c42e6a223fb06ded31b1960b904c9f2f5126714c",
+      "line": 231,
+      "signature": "theorem near_square_rigidity {n δ : ℤ} (L : Submodule ℤ Plane) (hn : 2 ≤ n) (hδ : 0 ≤ δ) (hδn : δ < n) (hindex : (L.toAddSubgroup.index : ℤ) = n ^ 2 - δ) (hcover : RectangleCovers L n n) : ∃ a b ε : ℤ, 0 ≤ a ∧ a < n ∧ 0 ≤ b ∧ b < n ∧ (ε = 1 ∨ ε = -1) ∧ a * b = δ ∧ L = Submodule.span ℤ (Set.range ![![n, -ε * b], ![-a, ε * n]])"
+    }
+  }
+}

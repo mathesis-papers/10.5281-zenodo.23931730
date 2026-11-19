@@ -1,0 +1,14 @@
+[site]
+repo = "mathesis-papers/10.5281-zenodo.23931730"
+base_url = "https://papers.trureturing.org/10.5281-zenodo.23931730/"
+post_build = ["python3", "-c", "from pathlib import Path\nimport runpy\nscript = Path(\"docs/layer-mathesis/scripts/site.py\")\nif script.is_file():\n    runpy.run_path(str(script), run_name=\"__main__\")\nelse:\n    print(\"Mathesis post-build skipped: layer script is absent from repository being built\")\n"]
+languages = ["zh", "en"]
+[site.title]
+zh = "Bajnok–Beatty Conjectures 4.1 and 1.6 (arXiv:2406.04045v1, Section 4, p. 10; Section 1, p. 3): classification and extremal noncyclic order"
+en = "Bajnok–Beatty Conjectures 4.1 and 1.6 (arXiv:2406.04045v1, Section 4, p. 10; Section 1, p. 3): classification and extremal noncyclic order"
+[trureturing]
+repo = "the-omega-institute/trureturing"
+branch = "dev"
+[books]
+order = ["bajnok-beatty-original-conjecture-4-1"]
+hide = []

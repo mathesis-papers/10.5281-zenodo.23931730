@@ -1,0 +1,178 @@
+{
+  "voice": "af_heart",
+  "speed": 0.96,
+  "say": {
+    "Bajnok": "Bye nock",
+    "Beatty": "Bee tee",
+    "Ma": "Mah",
+    "Zhang": "Jahng"
+  },
+  "music": {
+    "bpm": 84,
+    "progression": "d-minor"
+  },
+  "scenes": [
+    {
+      "id": "moves",
+      "name": "TWO MOVES",
+      "lead": 0.8,
+      "tail": 0.7,
+      "music": [
+        0.45,
+        0.2,
+        0.16,
+        0.0,
+        0.0
+      ],
+      "lines": [
+        [
+          "Choose two moves on a board that wraps around. You may repeat a move, or go backwards.",
+          "在会绕回原处的棋盘上选两个动作，允许重复，也允许倒走。"
+        ],
+        [
+          "Here, all eight positions are reachable in at most two steps. The expressions show how.",
+          "这里八个位置都能在两步内到达；每个式子给出一种走法。"
+        ],
+        [
+          "But a larger board can work when a smaller one fails. At radius four, thirty-two positions can work, while twenty-eight cannot.",
+          "更大的棋盘反而可能可行：半径四时，三十二个位置可以成功，二十八个却不行。"
+        ]
+      ]
+    },
+    {
+      "id": "diamond",
+      "name": "COEFFICIENT DIAMOND",
+      "lead": 0.8,
+      "tail": 0.7,
+      "music": [
+        0.45,
+        0.2,
+        0.16,
+        0.0,
+        0.0
+      ],
+      "lines": [
+        [
+          "Record the net number of each move as two integer coordinates. The cost is the sum of their absolute values.",
+          "用两个整数记录两种动作的净次数，代价是它们绝对值的和。"
+        ],
+        [
+          "At radius four, the allowed coefficients form this diamond of forty-one points.",
+          "半径四允许的系数构成这个含四十一个整数点的菱形。"
+        ],
+        [
+          "Different coefficients may reach the same position. Their differences form the relation lattice. Counting points alone misses this overlap.",
+          "不同系数可能到达同一位置；它们的差组成关系格子。只数点会忽略重合。"
+        ]
+      ]
+    },
+    {
+      "id": "transform",
+      "name": "SUM AND DIFFERENCE",
+      "lead": 0.8,
+      "tail": 0.7,
+      "music": [
+        0.45,
+        0.2,
+        0.16,
+        0.0,
+        0.0
+      ],
+      "lines": [
+        [
+          "Replace the coordinates by their sum and difference. The diamond becomes a square with a parity restriction.",
+          "把坐标换成和与差，菱形变成一个带奇偶限制的正方形。"
+        ],
+        [
+          "The sum of absolute values equals the larger absolute value of the sum and difference.",
+          "绝对值之和，等于和与差的绝对值中较大的那个。"
+        ],
+        [
+          "For the groups in this paper, a careful parity argument gives a four by four square covering twice k lattice classes. So twice k cannot exceed sixteen.",
+          "对本文的群，仔细处理奇偶性后，用四乘四正方形覆盖二倍 k 个格子类，因此二倍 k 不能超过十六。"
+        ]
+      ]
+    },
+    {
+      "id": "rigidity",
+      "name": "THE SMALL DEFICIT",
+      "lead": 0.8,
+      "tail": 0.7,
+      "music": [
+        0.45,
+        0.2,
+        0.16,
+        0.0,
+        0.0
+      ],
+      "lines": [
+        [
+          "Almost filling a square forces the relation lattice into a rigid shape. Its deficit is a product of two displacements.",
+          "几乎装满正方形会强制关系格子具有特定形状；亏损等于两个位移的乘积。"
+        ],
+        [
+          "At radius four, k equals seven would leave deficit two. But both displacements must be even.",
+          "半径四时，若 k 等于七，亏损就是二；然而这两个位移都必须是偶数。"
+        ],
+        [
+          "Their product is divisible by four, so it cannot equal two. This rules out every pair of moves on that board.",
+          "它们的乘积能被四整除，不能等于二，因此这个棋盘上的任何动作对都失败。"
+        ]
+      ]
+    },
+    {
+      "id": "construction",
+      "name": "THE MATCHING CONSTRUCTION",
+      "lead": 0.8,
+      "tail": 0.7,
+      "music": [
+        0.45,
+        0.2,
+        0.16,
+        0.0,
+        0.0
+      ],
+      "lines": [
+        [
+          "For k equal to eight, the deficit is zero, so that obstruction disappears.",
+          "当 k 等于八，亏损为零，刚才的障碍消失。"
+        ],
+        [
+          "The paper gives relation vectors that actually cover the group, rather than relying on the absence of an obstruction.",
+          "论文给出真正实现覆盖的关系向量，而不只是说明障碍消失。"
+        ],
+        [
+          "These two vectors give the group with thirty-two positions and covering radius four. Together, necessity and construction complete the classification.",
+          "这两个向量给出三十二个位置、覆盖半径四的群；必要性与构造合在一起完成分类。"
+        ]
+      ]
+    },
+    {
+      "id": "maximum",
+      "name": "ALLOW OTHER GROUPS",
+      "lead": 0.8,
+      "tail": 0.7,
+      "music": [
+        0.45,
+        0.2,
+        0.16,
+        0.0,
+        0.0
+      ],
+      "lines": [
+        [
+          "Allowing other noncyclic abelian groups changes the maximum. Radius four now permits thirty-six positions.",
+          "允许其他非循环交换群后，最大值改变了：半径四可以达到三十六个位置。"
+        ],
+        [
+          "The proof counts the sparsest coefficient residue class. The smallest prime divisor of twice the radius plus one determines the answer.",
+          "证明数出最稀少的系数余数类；半径的二倍加一的最小素因子决定答案。"
+        ],
+        [
+          "Bajnok and Beatty supplied the attaining constructions. Ma and Zhang complete the upper bound and the classification explained here.",
+          "达到上界的构造来自 Bajnok 与 Beatty；Ma 与 Zhang 完成这里解释的上界与分类。"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "duration": "2:21",
+  "id": "001-diamond-square",
+  "lean": [
+    "D5/S3/FiniteGroups/BajnokBeattyAllRegimes.result",
+    "D5/S3/FiniteGroups/NearSquareLatticeRigidity.near_square_rigidity",
+    "D5/S3/FiniteGroups/BajnokBeattyCayleyNecessity.top_strip_necessity",
+    "D5/S3/FiniteGroups/BajnokBeattyCayleySufficiency.result",
+    "D5/S3/FiniteGroups/BajnokBeattySharpMaximum.sharp_maximum"
+  ],
+  "narration": {
+    "engine": "Kokoro-82M v1.0 (onnx)",
+    "language": "en",
+    "voice": "af_heart"
+  },
+  "outputs": {
+    "cover": "bajnok-beatty-original-conjecture-4-1_001_cover.jpg",
+    "narrated_720p": "bajnok-beatty-original-conjecture-4-1_001_720p_narrated.mp4"
+  },
+  "publication_basis": "pinned",
+  "released": "2026-11-15",
+  "resolution": "1280x720@30",
+  "style": "trureturing cyberpunk · deterministic canvas",
+  "subject": "https://github.com/the-omega-institute/trureturing",
+  "subtitles": [
+    "zh",
+    "en"
+  ],
+  "summary": "Why radius four permits 32 positions in Z/2 × Z/16 but forbids 28 in Z/2 × Z/14: coefficient diamonds, square rigidity, parity, and a matching construction.",
+  "summary_zh": "解释半径四为何允许 Z/2 × Z/16 的三十二个位置，却排除 Z/2 × Z/14 的二十八个位置：系数菱形、正方形刚性、奇偶性与达到构造。",
+  "title": "From a diamond to a square",
+  "title_zh": "从菱形到正方形"
+}

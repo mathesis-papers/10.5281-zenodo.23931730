@@ -1,0 +1,17 @@
+[book]
+version = "2"
+authors = ["Haobo Ma", "Wenlin Zhang"]
+license = "CC-BY-4.0"
+editions = ["zh", "en"]
+date = "2026-11-05"
+[book.title]
+zh = "Bajnok–Beatty Conjectures 4.1 and 1.6 (arXiv:2406.04045v1, Section 4, p. 10; Section 1, p. 3): classification and extremal noncyclic order"
+en = "Bajnok–Beatty Conjectures 4.1 and 1.6 (arXiv:2406.04045v1, Section 4, p. 10; Section 1, p. 3): classification and extremal noncyclic order"
+[outputs]
+html = true
+pdf = ["academic"]
+epub = true
+[mathesis]
+work = "bajnok-beatty-original-conjecture-4-1"
+version = 2
+source_title = "Bajnok–Beatty Conjectures 4.1 and 1.6 (arXiv:2406.04045v1, Section 4, p. 10; Section 1, p. 3): classification and extremal noncyclic order"

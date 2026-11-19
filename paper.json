@@ -2,16 +2,16 @@
   "files": {
     "pdf": {
       "bytes": 107744,
-      "matches_public": null,
+      "matches_public": true,
       "path": "paper.pdf",
-      "public_sha256": null,
+      "public_sha256": "a0fbaedc2c607e5862f3580fac346a6e5f16e7474e92a1cfe1d19225d09cefc8",
       "sha256": "a0fbaedc2c607e5862f3580fac346a6e5f16e7474e92a1cfe1d19225d09cefc8"
     },
     "source": {
       "bytes": 19914,
-      "matches_public": null,
+      "matches_public": true,
       "path": "source.archive",
-      "public_sha256": null,
+      "public_sha256": "64ea5cfdeed1218940783c144c01fd4515f45497ea15a837fc19d41d4bd4c043",
       "sha256": "64ea5cfdeed1218940783c144c01fd4515f45497ea15a837fc19d41d4bd4c043"
     }
   },
@@ -38,6 +38,8 @@
     "license": "CC-BY-4.0",
     "msc": [],
     "pdf": {
+      "bytes": 107744,
+      "sha256": "a0fbaedc2c607e5862f3580fac346a6e5f16e7474e92a1cfe1d19225d09cefc8",
       "url": "/api/v1/collected-papers/bajnok-beatty-original-conjecture-4-1/files/pdf?version=2"
     },
     "previous_version": null,
@@ -46,6 +48,8 @@
     "record": "bajnok-beatty-original-conjecture-4-1",
     "repository_name": "10.5281-zenodo.23931730",
     "source": {
+      "bytes": 19914,
+      "sha256": "64ea5cfdeed1218940783c144c01fd4515f45497ea15a837fc19d41d4bd4c043",
       "url": "/api/v1/collected-papers/bajnok-beatty-original-conjecture-4-1/files/source?version=2"
     },
     "title": "Bajnok–Beatty Conjectures 4.1 and 1.6 (arXiv:2406.04045v1, Section 4, p. 10; Section 1, p. 3): classification and extremal noncyclic order",

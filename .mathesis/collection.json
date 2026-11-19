@@ -1,7 +1,7 @@
 {
   "git_blobs": {
     ".github/workflows/pages.yml": "7879724db1358178aad7e9bed326a44be44f5a6a",
-    ".mathesis/generated.json": "76d7757e1b52f36c00128617280b4fa358504047",
+    ".mathesis/generated.json": "3a85d54374d782df05ceea2a0cd42a1c779cb7e5",
     "CHANGELOG.md": "1c8da5a39dc613183805af9960a6e55f7dc64fd9",
     "CITATION.cff": "02fccd813535c0cdf6af8de2dcd9ba35f2b2fed6",
     "CONTRIBUTING.md": "ea69168fc2cb506b57b00de1ef588aaf011aa3da",
@@ -14,7 +14,7 @@
     "manuscript/bajnok-beatty-conjectures/metadata.json": "15fc8bedadd6feb4ddbf465cb2277e7bf3a97a6d",
     "manuscript/bajnok-beatty-conjectures/note.tex": "8fb690cfc8013d083d85a3cec3ad4b4f716845e6",
     "manuscript/bajnok-beatty-conjectures/verify.py": "60b0aab80c0bd0a1e1811adf003fb9d9152c15a2",
-    "paper.json": "d8c9a86fd3b79e3af30a33748f177010d235df7f",
+    "paper.json": "cb51026c8bbfcfd96ff11f54c1cb5344d97fba68",
     "paper.pdf": "0937895f32bb3deb83f81ecc5a6ea999d151f7ef",
     "site/en/index.html": "45dc3779967c0122f3ca330efe0a6bc706fd80b9",
     "site/index.html": "c11c07a0682c6ca2a0f557dd2af3c7af59949c08",
@@ -41,7 +41,7 @@
   "schema": "mathesis.paper-collection.v1",
   "sha256": {
     ".github/workflows/pages.yml": "f15d983dcb8f324ffdedb50b05f7380e11fda8723d49b5c8f10ef0f414612372",
-    ".mathesis/generated.json": "790b7059ee33dfb8fc50c85502f3058ead5f4c5d0b8e5fa913161b3f315b1c5c",
+    ".mathesis/generated.json": "a802139f6f431eb98907dee423548fa52b8293ceb6a8a91f8799fdfb174363bf",
     "CHANGELOG.md": "a24c33be5c0b6029489a2c8419bb55d317fd1d1c0fb6165e206910b266ee18ee",
     "CITATION.cff": "a0e10d98866a8c02cef7ed9f601a56915c9af0849d100778e2d81eacef6dcd77",
     "CONTRIBUTING.md": "fafd66e63160b2a88f433af56d2af2b0f7bf6ed2fd417d46b54446ce07c627ff",
@@ -54,7 +54,7 @@
     "manuscript/bajnok-beatty-conjectures/metadata.json": "5b55a2055f1ec7660039085815f558d9ba5f3fbc9990b4181c0cc0a2e264d5f6",
     "manuscript/bajnok-beatty-conjectures/note.tex": "dac20c89a7e03c529705cd8de462e3bcef7037d8aa29157e1e5f28543b2c8371",
     "manuscript/bajnok-beatty-conjectures/verify.py": "a1ff5757fbb19a2bbce705cd02aedc4b0148e560fb30ea7ea8a5e72da5dc9fde",
-    "paper.json": "b3182f1d4b4f348f1b0b8b3652756717fa6b4198002de00d4dc77811cf9d6e13",
+    "paper.json": "0eaf72ca2d972c20bf1241b9c1047ae4fc1b2d18f14fd8663063b85fbe88d57a",
     "paper.pdf": "a0fbaedc2c607e5862f3580fac346a6e5f16e7474e92a1cfe1d19225d09cefc8",
     "site/en/index.html": "2847366279438b152c163458b0c9193a99b668784815a9d4a5bded13fbcd6353",
     "site/index.html": "17fd7819b4bb269b5cae48810dee8aa354fca49be230eddb8eecb6ced5f4e0c5",

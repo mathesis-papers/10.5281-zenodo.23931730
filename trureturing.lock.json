@@ -2,15 +2,15 @@
   "schema": "trureturing-books.lock.v1",
   "repo": "the-omega-institute/trureturing",
   "branch": "dev",
-  "commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
-  "pinned_at": "2026-11-08T12:32:04Z",
+  "commit": "b05ceb497bd134559c3c0f84d925c1643f7c65cb",
+  "pinned_at": "2026-11-24T06:47:16Z",
   "declarations": {
     "D5/S3/FiniteGroups/BajnokBeattyAllRegimes.result": {
       "module": "D5/S3/FiniteGroups/BajnokBeattyAllRegimes",
       "name": "D5.S3.FiniteGroups.BajnokBeattyAllRegimes.result",
       "kind": "theorem",
-      "statement_id": "sha256:ee1ae83b20697b81b9fc002add719f4eac1f2571c15b6f1c0dcdb2918b0eaf57",
-      "line": 339,
+      "statement_id": "sha256:257fbd2b460620171826cc9ee81f77a575c8e400896ea67e4b12e14610d70f42",
+      "line": 353,
       "signature": "theorem result (k s : ℕ) (hk : 0 < k) (hs : 0 < s) : (∃ a b : ZMod 2 × ZMod (2*k), a ≠ b ∧ ∀ g, ∃ x y : ℤ, g = x • a + y • b ∧ |x|+|y| ≤ (s : ℤ)) ↔ (Odd s ∧ 2*k ≤ s^2-1) ∨ (Even s ∧ 2*k ≤ s^2-s) ∨ (s%4=0 ∧ Even k ∧ s^2-s < 2*k ∧ 2*k ≤ s^2) ∨ (s%4=2 ∧ k%4=2 ∧ s^2-s < 2*k ∧ 2*k ≤ s^2)"
     },
     "D5/S3/FiniteGroups/BajnokBeattyCayleyNecessity.top_strip_necessity": {
